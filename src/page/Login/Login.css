@@ -1,0 +1,113 @@
+
+body{
+    background-color:#9EC3FF;
+  }
+  .Login_tit{
+    width: 50%;
+    height: 100vh;
+    float: right;
+    
+  
+    text-align: center;
+  }
+  .Login_tit{
+    background-color: #9EC3FF;
+    color: white;
+  }
+  #Login_text{
+    font-weight: 1000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 60px;
+    display: inline-block;
+  
+    
+    position: relative;
+    top: 40px;
+  }
+  
+  
+  #Login_button{
+    border: none;
+    height: 55px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: white;
+    color: #9EC3FF;
+  
+    font-size: 20px;
+    font-weight: bold;
+  
+    
+    position: relative;
+    top: 150px;
+  }
+  #Login_button:hover{
+    background-color: #FFEE95;
+  }
+  
+  #id_text{
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 60px;
+    width: 400px;
+    border-radius: 50px;
+    
+    padding-left: 30px;  
+  
+    
+    position: relative;
+    top: 60px;
+  
+  }
+  
+  #pw_text{
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 60px;
+    width: 400px;
+    border-radius: 50px;
+  
+    padding-left: 30px;
+  
+    
+    position: relative;
+    top: 100px;
+    
+  }
+  ::placeholder{
+    color: #9EC3FF;
+  
+  }
+  input:focus {outline: none;}
+  
+  #find{
+   border: none;
+   color: white;
+   text-decoration:underline;
+  
+   
+   position: relative;
+   top: 190px;
+  }
+  #find:hover{
+    color: black;
+  }
+  #sign_up{
+    border: none;
+    color: white;
+    text-decoration:underline;
+    position: relative;
+    top: 180px;
+    background-color: #9EC3FF;
+  }
+  #find{
+    background-color: #9EC3FF;
+  }
+  #sign_up:hover{
+    color: black;
+  }
