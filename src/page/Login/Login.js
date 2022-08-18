@@ -14,10 +14,10 @@ export default function Login(){
             </div>
             <div className="Login_input">
                 <div id="Login_id_text">
-                    <input type="text" id="id_text" placeholder="ID" value={}/>
+                    <input type="text" id="id_text" placeholder="ID"/>
                 </div>
                 <div id ="Login_pw_text">
-                    <input type="password" id="pw_text" value={}/>
+                    <input type="password" id="pw_text" />
                 </div>
                 <div className="login_button_className">
                     <button id="Login_button">확인</button>
