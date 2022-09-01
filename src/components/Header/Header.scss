@@ -1,0 +1,36 @@
+@import '../../style/common.scss';
+body{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    .total{
+        width: 80vw;
+        
+        .header_tit{
+
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                img{
+                }
+                float: left;
+            }
+            .header_button{
+                #headerbutton{
+                    float: left;
+                    button{
+                        font-size: 18px;
+                        background-color: transparent;
+                        border: none;
+                        font-weight: 550;
+                    }
+                }
+                .signup_button{
+                    position: relative;
+                    left: 10px;
+                }
+            }
+        }
+    }
+}
