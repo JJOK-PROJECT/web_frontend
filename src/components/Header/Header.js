@@ -1,9 +1,9 @@
 import './Header.scss';
 export default function header(){
     return(
-        <>
-            <body>
-                <div className='total'>
+        <body>
+            <div className='Header_t'>
+                <div className='header-total'>
                     
                     <div className='header_total'>
                         <div className="header_tit">
@@ -26,7 +26,7 @@ export default function header(){
                         </div>    
                     </div>
                 </div>
-            </body>
-        </>
+            </div>
+        </body>
     )
 }

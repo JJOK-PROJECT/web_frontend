@@ -1,10 +1,15 @@
 @import '../../style/common.scss';
+
 body{
-    position: relative;
-    top: 20px;
     display: flex;
     justify-content: center;
-    .total{
+
+}
+.Header_t{
+    position: fixed;
+    top: 20px;
+    
+    .header-total{
         width: 80vw;
         
         .header_tit{
