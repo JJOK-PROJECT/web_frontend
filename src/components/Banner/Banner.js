@@ -1,42 +1,29 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";	// 추가
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
-import {Swiper, SwiperSlide} from "swiper/react";
-import SwiperCore, {Navigation, Autoplay} from 'swiper';
-import {Link} from "react-router-dom";
-import "./Banner.scss"
-import {useState} from "react";
+import "swiper/components/pagination/pagination.scss";
 
-SwiperCore.use([Navigation, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Autoplay])	// 추가
 
-export default function Banner(props) {
-
-    const [activeIndex, setActiveIndex] = useState(1)
-
-    return (
-        <div className="main-banner">
-            <Swiper
-                className="main-banner"
-                slidesPerView={1}
-                navigation
-                loop
-                autoplay={{delay: 4000}}
-                onActiveIndexChange={i => setActiveIndex(i.realIndex)}
-            >
-                {props.banner.map(b => (
-                    <SwiperSlide>
-                        <Link to="">
-                            <img className="main-banner--image" src={b.img} alt="banner"/>
-                        </Link>
-                    </SwiperSlide>
-                ))
-
-                }
-                <div className="main-banner--active-index-position-helper">
-                    <div className="main-banner--active-index">
-                        {activeIndex + 1} / {props.banner.length}
-                    </div>
-                </div>
-            </Swiper>
-        </div>
-    )
+function Banner() {
+  return(
+    <div>
+      <Swiper
+        className="banner"
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 1000 }}	// 추가
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+      </Swiper>
+    </div>
+  )
 }
+
+export default Banner;
