@@ -1,17 +1,17 @@
 @import '../../style/common.scss';
 
-body{
+.header_body{
     display: flex;
     justify-content: center;
-
+    height: 65px;
 }
 .Header_t{
+    background-color: white;
     position: fixed;
-    top: 20px;
-    
+    top: 3%;
+    z-index: 2;
     .header-total{
         width: 80vw;
-        
         .header_tit{
 
             display: flex;

@@ -1,9 +1,13 @@
 import './Main.scss';
-import Banner from "../../components/Banner/Banner";
+import BannerData from "./banner.json";
+import Banner from "../../components/Main/Banner/Banner";
 export default function Main(){
+    let i = 0
     return(
         <section>
-            <Banner />
+            <Banner
+                banner={BannerData.banners}
+            />
         </section>
     )
 }
