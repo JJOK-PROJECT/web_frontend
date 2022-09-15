@@ -1,8 +1,10 @@
 import './Main.scss';
 import BannerData from "./banner.json";
+import ListData from "./list.json";
 import Banner from "../../components/Main/Banner/Banner";
+import ListArticle from "../../components/ListAritcle/ListArticle";
 export default function Main(){
-    let i = 0
+    
     return(
         <section>
             <Banner
