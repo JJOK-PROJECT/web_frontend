@@ -3,6 +3,9 @@ import BannerData from "./banner.json";
 import ListData from "./list.json";
 import Listcomponent from "../../components/ListArticle/ListArticle";
 import Banner from "../../components/Main/Banner/Banner";
+import { SwiperSlide,Swiper } from 'swiper/react';
+import {Link} from "react-router-dom";
+import "swiper/scss";
 export default function Main(){
     
     return(
@@ -10,11 +13,26 @@ export default function Main(){
             <Banner
                 banner={BannerData.banners}
             />
-            <Listcomponent
-                image={ListData.img}
-                title={ListData.name}
-                mesage={ListData.message}
-            />
+            <div className='main-category-swiper'>
+                <Swiper
+                    spaceBetween={200}
+                    slidesPerView={7}
+                    loop={true}
+                >
+                {
+                    ListData.list.map(li => (
+                        <SwiperSlide>
+                            <Listcomponent
+                                image={li.image}
+                                name={li.name}
+                                message={li.message}
+                                link={li.link}
+                            />
+                        </SwiperSlide>
+                    ))
+                }
+                </Swiper>
+            </div>
         </section>
     )
 }
