@@ -1,40 +1,49 @@
 @import '../../style/common.scss';
 
 .header_body{
+    background-color: white;
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
     display: flex;
     justify-content: center;
-    height: 65px;
-}
-.Header_t{
-    background-color: white;
-    position: fixed;
-    top: 3%;
-    z-index: 2;
-    .header-total{
+    .Header_t{
         width: 80vw;
-        .header_tit{
+        background-color: white;
+        .header-total{
+            .header_total{
+                .header_tit{
+                    .logo{
+                        position: relative;
+                        top: 15px;
+                        img{
 
-            display: flex;
-            justify-content: space-between;
-            .logo{
-                img{
-                }
-                float: left;
-            }
-            .header_button{
-                #headerbutton{
-                    float: left;
-                    button{
-                        font-size: 18px;
-                        background-color: transparent;
-                        border: none;
-                        font-weight: 550;
-                        cursor: pointer;
+                        }
                     }
-                }
-                .signup_button{
-                    position: relative;
-                    left: 10px;
+                    .header_button{
+                        float: right;
+                        position: relative;
+                        bottom: 12px;
+                        .login_button{
+                            float: left;
+                            button{
+                                background-color: transparent;
+                                border: none;
+                                font-size: 120%;
+                                font-weight: 700;
+                                padding-right: 20px;
+                            }
+                        }
+                        .signup_button{
+                            float: left;
+                            button{
+                                background-color: transparent;
+                                border: none;
+                                font-size: 120%;
+                                font-weight: 700;
+                            }
+                        }
+                    }
                 }
             }
         }

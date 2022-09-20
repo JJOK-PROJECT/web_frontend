@@ -1,0 +1,61 @@
+@import '../../style/common.scss';
+body{
+    
+}
+a{
+    text-decoration: none;
+}
+.listarticle-tit{
+    white-space: pre-wrap;
+    width: 100vw;
+    .listarticle-tit-thumbnail{
+        .list-article-tit-div{
+            
+            border: 1px solid $medium-grey;
+            border-radius: 10%;
+            height: 33vh;
+            width: 15vw;
+            .list-article-a{
+                width: 100vw;
+                height: 100vh;
+            }
+            .list-article-tit-div-front{
+                width: 100vw;
+                
+                padding: 10px 0px 0px 20px;
+                .list-article-div-img{
+                    position: relative;
+                    top: 10px;
+                    .list-article-image{
+                        width: 80%;
+                    }
+                    float: left;
+                    
+                }
+                .list-article-div-name{
+                    
+                    height: 70px;        
+                    display: table-cell;
+                    vertical-align: middle;
+                    .list-article-name{
+                        font-weight: 700;
+                        font-size: 1.3em;
+                        color: black;
+                        
+                    }
+                }
+            }
+            .list-article-tit-div-back{
+                position: relative;
+                padding: 10px 0px 0px 20px;
+                .list-article-div-message{
+                    span{
+                        font-size: 1em;
+                        color: black;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
