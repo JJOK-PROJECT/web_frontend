@@ -1,47 +1,53 @@
 {
-  "title": "목록",
-  "s": [
+  "list": [
     {
       "id": 1,
-      "Image": "https://ifh.cc/g/OWTTfQ.png",
+      "image": "https://ifh.cc/g/OWTTfQ.png",
       "name": "메타버스",
-      "message": "학교의 다양한 시설을 확인해보세요!"
+      "message": "학교의 다양한\n시설을 확인해보세요!",
+      "link": "metabus"
     },
     {
       "id": 2,
-      "Image": "https://ifh.cc/g/xadQ9p.png",
+      "image": "https://ifh.cc/g/xadQ9p.png",
       "name": "시간표",
-      "message": "오늘의 시간표를 확인하세요!"
+      "message": "오늘의 시간표를\n확인해보세요!",
+      "link": "schedule"
     },
     {
       "id": 3,
-      "Image": "https://ifh.cc/g/fxBzW4.png",
-      "name": "익명커뮤니티",
-      "message": "재학생 및 졸업생들과 편안하게 질문해보세요!"
+      "image": "https://ifh.cc/g/fxBzW4.png",
+      "name": "익명\n커뮤니티",
+      "message": "재학생 및 졸업생들과\n편안하게 질문해보세요!",
+      "link":"anonymous"
     },
     {
       "id": 4,
-      "Image": "https://ifh.cc/g/4GRK1V.png",
+      "image": "https://ifh.cc/g/4GRK1V.png",
       "name": "뜨끈조언",
-      "message": "선배들에게 다양한 조언을 얻어보세요!"
+      "message": "선배들에게\n다양한 조언을 얻어보세요!",
+      "link": "hotadvice"
     },
     {
       "id": 5,
-      "Image": "https://ifh.cc/g/VQQ4Sw.png",
+      "image": "https://ifh.cc/g/VQQ4Sw.png",
       "name": "급식표",
-      "message": "오늘의 급식을 확인하세요!"
+      "message": "오늘의 급식을\n확인하세요!",
+      "link": "lunch"
     },
     {
       "id": 6,
-      "Image": "https://ifh.cc/g/jT8QXA.png",
-      "name": "일반커뮤니티",
-      "message": "재학생 및 졸업생들과 서로 질문해보세요!"
+      "image": "https://ifh.cc/g/jT8QXA.png",
+      "name": "일반\n커뮤니티",
+      "message": "재학생 및 졸업생들과\n서로 질문해보세요!",
+      "link":"community"
     },
     {
       "id": 7,
-      "Image": "https://ifh.cc/g/jwnwZx.png",
+      "image": "https://ifh.cc/g/jwnwZx.png",
       "name": "학사일정",
-      "message": "학교 일정에 대해 확인해보세요!"
+      "message": "학교 일정에 대해\n확인해보세요!",
+      "link":"schoolschedule"
     }
   ]
 }

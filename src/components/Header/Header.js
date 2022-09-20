@@ -4,7 +4,6 @@ export default function header(){
         <body className='header_body'>
             <div className='Header_t'>
                 <div className='header-total'>
-                    
                     <div className='header_total'>
                         <div className="header_tit">
                             <div className="logo">
