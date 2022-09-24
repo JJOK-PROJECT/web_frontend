@@ -1,4 +1,5 @@
 import './Header.scss';
+import {Link} from "react-router-dom";
 export default function header(){
     return(
         <body className='header_body'>
@@ -16,11 +17,13 @@ export default function header(){
                                         로그인
                                     </button>
                                 </div>
-                                <div className="signup_button" id="headerbutton">
-                                    <button>
-                                        회원가입
-                                    </button>
-                                </div>
+                                <Link to="">
+                                    <div className="signup_button" id="headerbutton">
+                                        <button>
+                                            회원가입
+                                        </button>
+                                    </div>
+                                </Link>
                             </div>
                         </div>    
                     </div>

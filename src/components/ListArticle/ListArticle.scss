@@ -1,6 +1,6 @@
 @import '../../style/common.scss';
-body{
-    
+.ListArticle_body{
+    margin: 0 auto;    
 }
 a{
     text-decoration: none;
@@ -8,6 +8,8 @@ a{
 .listarticle-tit{
     white-space: pre-wrap;
     width: 100vw;
+    display: flex;
+
     .listarticle-tit-thumbnail{
         .list-article-tit-div{
             
@@ -57,5 +59,36 @@ a{
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .list-article-name{
+        display: none;
+    }
+    .list-article-div-message{
+        display: none;
+    }
+}
+
+
+.swiper-button-prev {
+    background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_left_52_52.svg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.swiper-button-next {
+    position: absolute;
+    background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_right_52_52.svg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  display: none;
+}
+.swiper-button-prev,.swiper-button-next {
+    padding: 10px;
+    &:hover{
     }
 }

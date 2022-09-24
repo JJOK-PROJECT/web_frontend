@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import "./ListArticle.scss";
 export default function ListArticle(props){
     return(
-        <>
+        <body className="ListArticle_body">
         <div className="listarticle-tit">
             <div className="listarticle-tit-thumbnail">
                 <div className="list-article-tit-div">   
@@ -29,6 +29,6 @@ export default function ListArticle(props){
                 </div>
             </div>
         </div>
-        </>
+        </body>
     )
 }

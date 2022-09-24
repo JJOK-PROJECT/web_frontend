@@ -5,13 +5,11 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/css/effect-fade";
-import {useState} from "react";
 import {Link} from "react-router-dom";
 
 SwiperCore.use([Pagination, Autoplay, EffectFade])
 
 function Banner(props){
-    const[activeIndex, setActiveIndex] = useState(1)
     return(
         <div className='banner_tit'>
             <Swiper

@@ -25,22 +25,32 @@
                         position: relative;
                         bottom: 12px;
                         .login_button{
+                            padding-right: 10px;
                             float: left;
                             button{
+                                border-radius: 5px;
                                 background-color: transparent;
                                 border: none;
                                 font-size: 120%;
                                 font-weight: 700;
-                                padding-right: 20px;
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: rgb(227, 227, 227);
+                                }
                             }
                         }
                         .signup_button{
                             float: left;
                             button{
+                                border-radius: 5px;
                                 background-color: transparent;
                                 border: none;
                                 font-size: 120%;
                                 font-weight: 700;
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: rgb(227, 227, 227);
+                                }
                             }
                         }
                     }
