@@ -8,7 +8,9 @@ export default function header(){
                     <div className='header_total'>
                         <div className="header_tit">
                             <div className="logo">
-                                <img src='icon/logo.png' />
+                                <Link to ="/">
+                                    <img src='icon/logo.png' />
+                                </Link>
                             </div>
 
                             <div className="header_button">
