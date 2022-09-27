@@ -1,0 +1,67 @@
+.l-header {
+    position: absolute;
+    margin-left: 3vw;
+}
+.l-title {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 3.5vw;
+    margin-left: 3vw;
+}
+.img-t{
+    position: absolute;
+    margin-top: -1.5vw;
+    margin-left: 10px;
+    width: 5vw;
+}
+.login-field {
+    position: absolute;
+    margin-top: 8vw;
+    margin-left: 3vw;
+}
+.let-go {
+    position: absolute;
+    height: 50px;
+    width: 32.3vw;
+    background: #9EC3FF;
+    margin-top: 18vw;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4em;
+    button{
+        color: white;
+    }
+    &:disabled {
+        background: rgba(0, 149, 246, 0.3);
+    }
+}
+.accounting{
+    position: absolute;
+    margin-left: 13.8vw;
+    margin-top: 22vw;
+    span{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: lighter;
+        color: #9EC3FF;
+    }
+}
+#login-basic {
+    height: 50px;
+    width: 370%;
+    border-radius: 5px;
+    border-width: thin;
+}
+#password-basic {
+    margin-top: 1vw;
+    height: 50px;
+    width: 370%;
+    border-radius: 5px;
+    border-width: thin;
+}
+input::placeholder {
+    color: gray;
+    font-size: 15px;
+}
