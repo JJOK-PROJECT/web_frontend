@@ -11,17 +11,12 @@ function App() {
     let [pw, setPw] = useState('');
     const handleinputid = (e) => {
         setId(e.target.value);
-        //     if (realId === setId) {
-        //         targets.disabled = false;
-        //     }
-        //     else targets.disabled = true;
     }
     const handleinputpw = (e) => {
         setPw(e.target.value);
-        //     if (realPw === setPw) {
-        //         targets.disabled = false;
-        //     }
-        //     else targets.disabled = true;
+    }
+    const handleinputpw = (e) => {
+        setPw(e.target.value);
     }
     const [modalOpen, setModalOpen] = useState(false);
     const Login = () => {
@@ -43,6 +38,16 @@ function App() {
             <button onClick={openModal}>로그인</button>
             <Modal open={modalOpen} close={closeModal}>
                 <div className='l-header'>
+                    <img src='icon/logo.png' width="150" height="30" />
+                </div>
+                <div className='l-title'>
+                    <b>로그인</b>
+                    <img className='img-t' src='icon/36.png' width="50" height="70"/>
+                </div>
+                <div className='login-field'>
+                    <input id="login-basic" placeholder='ID 입력'></input>
+                    <br />
+                    <input id="password-basic" placeholder='PW 입력'></input>
                     <img src='icon/logon.png' />
                 </div>
                 <div className='l-title'>
