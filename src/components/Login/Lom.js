@@ -11,17 +11,9 @@ function App() {
     let [pw, setPw] = useState('');
     const handleinputid = (e) => {
         setId(e.target.value);
-        //     if (realId === setId) {
-        //         targets.disabled = false;
-        //     }
-        //     else targets.disabled = true;
     }
     const handleinputpw = (e) => {
         setPw(e.target.value);
-        //     if (realPw === setPw) {
-        //         targets.disabled = false;
-        //     }
-        //     else targets.disabled = true;
     }
     const [modalOpen, setModalOpen] = useState(false);
     const Login = () => {
