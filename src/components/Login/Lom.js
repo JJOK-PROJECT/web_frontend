@@ -15,9 +15,6 @@ function App() {
     const handleinputpw = (e) => {
         setPw(e.target.value);
     }
-    const handleinputpw = (e) => {
-        setPw(e.target.value);
-    }
     const [modalOpen, setModalOpen] = useState(false);
     const Login = () => {
         if (realId === id && realPw === pw) {
@@ -48,16 +45,6 @@ function App() {
                     <input id="login-basic" placeholder='ID 입력'></input>
                     <br />
                     <input id="password-basic" placeholder='PW 입력'></input>
-                    <img src='icon/logon.png' />
-                </div>
-                <div className='l-title'>
-                    <b>로그인</b>
-                    <img className='img-t' src='icon/36.png' />
-                </div>
-                <div className='login-field'>
-                    <TextField id="login-basic" label="ID 입력" variant="outlined" style={{ width: '250%' }} value={id} onChange={handleinputid} />
-                    <br /><br />
-                    <TextField type="password" id="password-basic" label="PW 입력" variant="outlined" style={{ width: '250%' }} value={pw} onChange={handleinputpw} />
                 </div>
                 <div className='let-go'>
                     <button onClick={()=>Login()}>로그인</button>
