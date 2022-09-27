@@ -3,7 +3,8 @@ import './Modal.scss';
 
 export default function Modal (props){
     const { open, close, header } = props;
-
+    return (
+    const { open, close, header } = props;
     return (
         <div className={open ? 'openModal modal' : 'modal'}>
             {open ? (
