@@ -1,3 +1,4 @@
+@import '../../style/common.scss';
 .l-header {
     position: absolute;
     margin-left: 3vw;
@@ -24,7 +25,7 @@
     height: 50px;
     width: 32.3vw;
     background: #9EC3FF;
-    margin-top: 18vw;
+    margin-top: 18.5vw;
     margin-left: 5vw;
     display: flex;
     align-items: center;
@@ -37,26 +38,32 @@
 .accounting{
     position: absolute;
     margin-left: 13.8vw;
-    margin-top: 22vw;
+    margin-top: 23vw;
     span{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
         font-weight: lighter;
         color: #9EC3FF;
+        padding-top: 16px;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 #login-basic {
+    padding-left: 10px;
     height: 50px;
-    width: 370%;
+    width: 35vw;
     border-radius: 5px;
-    border-width: thin;
+    border-color: $light-grey;
 }
 #password-basic {
+    padding-left: 10px;
     margin-top: 1vw;
     height: 50px;
-    width: 370%;
+    width: 35vw;
     border-radius: 5px;
-    border-width: thin;
+    border-color: $light-grey;
 }
 input::placeholder {
     color: gray;

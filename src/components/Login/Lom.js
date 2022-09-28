@@ -38,12 +38,12 @@ function App() {
                 </div>
                 <div className='l-title'>
                     <b>로그인</b>
-                    <img className='img-t' src='icon/36.png' width="50" height="70"/>
+                    <img className='img-t' src='https://ifh.cc/g/MYRSY6.png' width="50" height="70"/>
                 </div>
                 <div className='login-field'>
                     <input id="login-basic" placeholder='ID 입력'></input>
                     <br />
-                    <input id="password-basic" placeholder='PW 입력'></input>
+                    <input id="password-basic" placeholder='PW 입력' type='password'></input>
                 </div>
                 <div className='let-go'>
                     <button onClick={()=>Login()}>로그인</button>

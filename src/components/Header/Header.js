@@ -19,11 +19,6 @@ export default function header() {
                                         <Login />
                                     </button>
                                 </div>
-                                <div className="signup_button" id="headerbutton">
-                                    <button>
-                                        회원가입
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
