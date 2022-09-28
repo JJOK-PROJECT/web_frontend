@@ -2,7 +2,7 @@ import './Main.scss';
 import BannerData from "./banner.json";
 import ListData from "./list.json";
 import Listcomponent from "../../components/ListArticle/ListArticle";
-import Banner from "../../components/Banner/Banner";
+import Banner from "../../components/Main/Banner/Banner";
 import { SwiperSlide,Swiper } from 'swiper/react';
 import {Link} from "react-router-dom";
 import "swiper/scss";

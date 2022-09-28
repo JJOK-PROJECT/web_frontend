@@ -18,7 +18,7 @@ function App() {
     const Login = () => {
         if (realId === id && realPw === pw) {
             closeModal();
-            nav('/loginmain');
+            nav('/');
         }
         else {
             alert('비밀번호를 다시 확인해주세요!');
@@ -50,8 +50,10 @@ function App() {
                     <br />
                     <input id="password-basic" placeholder='PW 입력' type='password' onChange={handleinputpw}></input>
                 </div>
-                <div className='let-go'>
-                    <button onClick={()=>Login()}>로그인</button>
+                <div className='let-go-tit'>
+                    <div className='let-go'>
+                        <button onClick={()=>Login()}>로그인</button>
+                    </div>
                 </div>
                 <div className='accounting'>
                     <span onClick={()=>Signup()}>회원가입</span>

@@ -1,7 +1,11 @@
 @import '../../style/common.scss';
+.modal_tit{
+}
 .l-header {
     position: absolute;
     margin-left: 3vw;
+    img{
+    }
 }
 .l-title {
     position: absolute;
@@ -12,33 +16,32 @@
 .img-t{
     position: absolute;
     margin-top: -1.5vw;
-    margin-left: 10px;
-    width: 5vw;
+    margin-left: 4px;
+    width: 100%;
 }
 .login-field {
-    position: absolute;
-    margin-top: 8vw;
-    margin-left: 3vw;
+    text-align: center;
+    position: relative;
+    top: 120px;
 }
-.let-go {
-    position: absolute;
-    height: 50px;
-    width: 32.3vw;
-    background: #9EC3FF;
-    margin-top: 18.5vw;
-    margin-left: 5vw;
+.let-go-tit{
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 0.4em;
-    button{
-        color: white;
+    position: relative;
+    top: 150px;
+    .let-go {
+        background: #9EC3FF;
+        border-radius: 0.4em;
+        button{
+            height: 50px;
+            width: 28vw;
+            color: white;
+        }
     }
 }
 .accounting{
-    position: absolute;
-    margin-left: 15vw;
-    margin-top: 23vw;
+    position: relative;
+    top: 24vh;
     span{
         font-size: 16px;
         line-height: 30px;
@@ -53,7 +56,7 @@
 #login-basic {
     padding-left: 10px;
     height: 50px;
-    width: 35vw;
+    width: 27vw;
     border-radius: 5px;
     border-color: $light-grey;
 }
@@ -61,7 +64,7 @@
     padding-left: 10px;
     margin-top: 1vw;
     height: 50px;
-    width: 35vw;
+    width: 27vw;
     border-radius: 5px;
     border-color: $light-grey;
 }
