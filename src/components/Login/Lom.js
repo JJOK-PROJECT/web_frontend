@@ -23,6 +23,10 @@ function App() {
             alert('비밀번호를 다시 확인해주세요!');
         }
     }
+    const Signup = () => {
+        closeModal();
+        nav('/singup');
+    }
     const openModal = () => {
         setModalOpen(true);
     };
@@ -41,15 +45,15 @@ function App() {
                     <img className='img-t' src='https://ifh.cc/g/MYRSY6.png' width="50" height="70"/>
                 </div>
                 <div className='login-field'>
-                    <input id="login-basic" placeholder='ID 입력'></input>
+                    <input id="login-basic" placeholder='ID 입력' onChange={handleinputid}></input>
                     <br />
-                    <input id="password-basic" placeholder='PW 입력' type='password'></input>
+                    <input id="password-basic" placeholder='PW 입력' type='password' onChange={handleinputpw}></input>
                 </div>
                 <div className='let-go'>
                     <button onClick={()=>Login()}>로그인</button>
                 </div>
                 <div className='accounting'>
-                    <span>회원가입</span>
+                    <span onClick={()=>Signup()}>회원가입</span>
                     <br />
                     <span>비밀번호를 잊어버리셨나요?</span>
                 </div>
