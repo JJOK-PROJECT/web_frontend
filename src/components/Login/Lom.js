@@ -17,6 +17,7 @@ function App() {
     const [modalOpen, setModalOpen] = useState(false);
     const Login = () => {
         if (realId === id && realPw === pw) {
+            closeModal();
             nav('/loginmain');
         }
         else {
