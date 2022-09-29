@@ -26,7 +26,7 @@ function App() {
     }
     const Signup = () => {
         closeModal();
-        nav('/singup');
+        nav('/signup');
     }
     const openModal = () => {
         setModalOpen(true);
@@ -39,7 +39,7 @@ function App() {
             <button onClick={openModal}>로그인</button>
             <Modal open={modalOpen} close={closeModal}>
                 <div className='l-header'>
-                    <img src='icon/logo.png' width="150" height="30" />
+                    <img src='icon/logo.png' width="150" height="26" />
                 </div>
                 <div className='l-title'>
                     <b>로그인</b>
