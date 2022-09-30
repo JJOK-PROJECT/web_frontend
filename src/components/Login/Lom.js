@@ -3,11 +3,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import Modal from './Loginmodal';
 import './Lom.scss';
 function App() {
+
     const realId = "kiki@naver.com";
     const nav = useNavigate();
     const realPw = "12345678";
+
     let [id, setId] = useState('');
     let [pw, setPw] = useState('');
+
     const handleinputid = (e) => {
         setId(e.target.value);
     }

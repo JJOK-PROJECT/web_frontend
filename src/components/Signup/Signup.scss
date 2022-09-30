@@ -1,155 +1,152 @@
+@import '../../style/common.scss';
 .hotbody {
     background: #EFF5FF;
     height: 100vh;
-}
+    .logoed {
+        padding-top: 2%;
+        text-align: center;
+    }
+    .registerform {
+        margin: auto;
+        margin-top: 1%;
+        width: 35vw;
+        height: 83vh;
+        background: white;
+        border-radius: 5px;
+        .ugro {
+            position: absolute;
+            padding-left: 2%;
+            font-size: 27px;
+        }
+        .so {
+            position: absolute;
+            padding-top: 1%;
+            padding-left: 8.6%;
+        }
+        form{
+            #signup_input{
+                position: absolute;
+                height: 40px;
+                width: 30%;
+                margin-left: 2%;
+                border-radius: 5px;
+                border-color: $light-grey;
+            }
+            .inputId {
+                margin-top: 5%;
+            }
+            
+            .inputPw {
+                margin-top: 9.5%;
+            }
+            
+            .inputName {
+                margin-top: 14%;
+            }
+            
+            .inputM {
+                position: absolute;
+                height: 40px;
+                margin-top: 18.5%;
+                width: 21%;
+                margin-left: 2%;
+                border-radius: 5px;
+                border-color: $light-grey;
+            }
+            
+            .inZButton {
+                position: absolute;
+                width: 8%;
+                height: 45px;
+                margin-top: 18.5%;
+                margin-left: 24.5%;
+                border: 0;
+                background: #9EC3FF;
+                color: white;
+                border-radius: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            
+            .inZ {
+                margin-top: 23%;
+            }
+            .je {
+                position: absolute;
+                margin-top: 27%;
+                margin-left: 3%;
+            
+                span {
+                    width: 50px;
+                    position: absolute;
+                    margin-left: 15px;
+                }
+            }
+            .jol {
+                position: absolute;
+                margin-top: 27%;
+                margin-left: 10%;
+            
+                span {
+                    width: 50px;
+                    position: absolute;
+                    margin-left: 15px;
+                }
+            }
+            .hak {
+                position: absolute;
+                margin-top: 27%;
+                margin-left: 18%;
+            
+                span {
+                    width: 50px;
+                    position: absolute;
+                    margin-left: 15px;
+                }
+            }
+            .il {
+                position: absolute;
+                margin-top: 27%;
+                margin-left: 26%;
+            
+                span {
+                    width: 50px;
+                    position: absolute;
+                    margin-left: 15px;
+                }
+            }
+            .years {
+                position: absolute;
+                margin-top: 30%;
+                margin-left: 12%;
+                select{
+                    width: 100px;
+                    margin-left: 10px;
+                }
+            }
+            .golog {
+                position: absolute;
+                margin-top: 33.5%;
+                margin-left: 8%;
+                width: 20vw;
+                height: 7vh;
+                border: 0;
+                background: #9EC3FF;
+                color: white;
+                border-radius: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            
 
-.logoed {
-    padding-top: 2%;
-    text-align: center;
-}
-
-.registerform {
-    margin: auto;
-    margin-top: 1%;
-    width: 35vw;
-    height: 83vh;
-    background: white;
-    border-radius: 5px;
-}
-
-.ugro {
-    position: absolute;
-    padding-left: 2%;
-    font-size: 27px;
-}
-
-.so {
-    position: absolute;
-    padding-top: 1%;
-    padding-left: 8.6%;
-}
-
-.inputId {
-    position: absolute;
-    height: 40px;
-    width: 30%;
-    margin-top: 5%;
-    margin-left: 2%;
-    border-radius: 5px;
-}
-
-.inputPw {
-    position: absolute;
-    height: 40px;
-    width: 30%;
-    margin-top: 9.5%;
-    margin-left: 2%;
-    border-radius: 5px;
-}
-
-.inputName {
-    position: absolute;
-    height: 40px;
-    width: 30%;
-    margin-top: 14%;
-    margin-left: 2%;
-    border-radius: 5px;
-}
-
-.inputM {
-    position: absolute;
-    height: 40px;
-    width: 20%;
-    margin-top: 18.5%;
-    margin-left: 2%;
-    border-radius: 5px;
-}
-
-.inZButton {
-    position: absolute;
-    width: 8%;
-    height: 45px;
-    margin-top: 18.5%;
-    margin-left: 24.5%;
-    border: 0;
-    background: #9EC3FF;
-    color: white;
-    border-radius: 5px;
-}
-
-.inZ {
-    position: absolute;
-    height: 40px;
-    width: 30%;
-    margin-top: 23%;
-    margin-left: 2%;
-    border-radius: 5px;
-}
-
-.je {
-    position: absolute;
-    margin-top: 27%;
-    margin-left: 3%;
-
-    span {
-        width: 50px;
-        position: absolute;
-        margin-left: 15px;
+        }
     }
 }
-.jol {
-    position: absolute;
-    margin-top: 27%;
-    margin-left: 10%;
 
-    span {
-        width: 50px;
-        position: absolute;
-        margin-left: 15px;
-    }
-}
-.hak {
-    position: absolute;
-    margin-top: 27%;
-    margin-left: 18%;
 
-    span {
-        width: 50px;
-        position: absolute;
-        margin-left: 15px;
-    }
-}
-.il {
-    position: absolute;
-    margin-top: 27%;
-    margin-left: 26%;
 
-    span {
-        width: 50px;
-        position: absolute;
-        margin-left: 15px;
-    }
-}
-.years {
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 12%;
-    select{
-        width: 100px;
-        margin-left: 10px;
-    }
-}
-.golog {
-    position: absolute;
-    margin-top: 33%;
-    margin-left: 8%;
-    width: 20vw;
-    height: 7vh;
-    border: 0;
-    background: #9EC3FF;
-    color: white;
-    border-radius: 5px;
-}
 [type=radio] {
     appearance: none;
     border: max(2px, 0.1em) solid gray;

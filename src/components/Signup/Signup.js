@@ -12,12 +12,12 @@ export default function Singup() {
                 <h1 className='ugro'>회원가입</h1>
                 <img className='so' src='icon/so.png' width="50" height="40" alt='정현우' />
                 <form>
-                    <input className='inputId' placeholder='ID 입력' />
-                    <input className='inputPw' placeholder='PW 입력' />
-                    <input className='inputName' placeholder='이름 입력' />
+                    <input className='inputId' id="signup_input" placeholder='ID 입력' />
+                    <input className='inputPw' id="signup_input" placeholder='PW 입력' />
+                    <input className='inputName' id="signup_input" placeholder='이름 입력' />
                     <input className='inputM' placeholder='이메일 입력' />
                     <button className='inZButton'>인증하기</button>
-                    <input className='inZ' placeholder='인증번호 입력' />
+                    <input className='inZ' id="signup_input" placeholder='인증번호 입력' />
                     <label className='je'>
                         <input type="radio" name='sin' value="재학생" />
                         <span>재학생</span>
