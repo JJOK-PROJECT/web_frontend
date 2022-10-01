@@ -12,7 +12,7 @@
       "image": "https://ifh.cc/g/xadQ9p.png",
       "name": "시간표",
       "message": "오늘의 시간표를\n확인해보세요!",
-      "link": "schedule"
+      "link": "schdule"
     },
     {
       "id": 3,
@@ -47,7 +47,7 @@
       "image": "https://ifh.cc/g/jwnwZx.png",
       "name": "학사일정",
       "message": "학교 일정에 대해\n확인해보세요!",
-      "link":"schoolschedule"
+      "link":"schoolschdule"
     }
   ]
 }
