@@ -23,6 +23,9 @@
     text-align: center;
     position: relative;
     top: 120px;
+    input{
+        border: 1.5px solid $medium-grey;
+    }
 }
 .let-go-tit{
     display: flex;
@@ -54,19 +57,23 @@
     }
 }
 #login-basic {
-    padding-left: 10px;
     height: 50px;
     width: 27vw;
     border-radius: 5px;
     border-color: $light-grey;
 }
+::placeholder{
+    text-indent:10px;
+}
 #password-basic {
-    padding-left: 10px;
     margin-top: 1vw;
     height: 50px;
     width: 27vw;
     border-radius: 5px;
     border-color: $light-grey;
+}
+::placeholder{
+    text-indent:10px;
 }
 input::placeholder {
     color: gray;
