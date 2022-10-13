@@ -1,28 +1,12 @@
 @import '../../style/common.scss';
+
 .listarticle-body{
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto;
     white-space: pre-wrap;
-}
-.Listarticle-main-div{
-    width: 100%;
-    .listarticle-tit-div{
-        float: left;
-        .listarticle-tit-thumbnail{/*category 하나*/
-            text-align: center;
-            display: inline-block;
-            .list-article-tit-div{
-                margin: 0 auto;
-                width: 80px;
-                border: 1px solid $medium-grey;
-                border-radius: 20px;
-                .list-article-div-img{
-                    .list-article-image{
-                        padding: 10px 0px;
-                        width: 50px;
-                    }
-                }                
-            }
-        }
+    .Listarticle-main-div{
+        display: flex;
+        justify-content: space-between;
+        
     }
 }
