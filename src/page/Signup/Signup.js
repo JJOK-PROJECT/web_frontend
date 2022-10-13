@@ -42,7 +42,7 @@ export default function Singup() {
                         </select>
                     </div>
                     <button className='golog'>
-                        <text>로그인</text>
+                        <text>회원가입</text>
                     </button>
                 </form>
             </div>
