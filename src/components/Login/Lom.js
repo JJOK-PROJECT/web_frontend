@@ -39,7 +39,7 @@ function App() {
     };
     return (
         <React.Fragment>
-            <button onClick={openModal}>로그인</button>
+            <button onClick={openModal} className="modalbutton-login">로그인</button>
             <Modal open={modalOpen} close={closeModal}>
                 <div className='l-header'>
                     <img src='icon/logo.png' width="150" height="26" />
