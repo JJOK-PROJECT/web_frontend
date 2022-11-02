@@ -1,6 +1,9 @@
 import './Lunch.scss';
 import { useState } from 'react';
 import List from "../../components/ListArticle/list.json";
+import Lunchicon from "../../assets/icon/lunch.svg";
+import Breakicon from "../../assets/icon/breakfast.svg";
+import Dinnericon from "../../assets/icon/dinner.svg";
 export default function Lunch() {
     const [tab,setTab] = useState('curr');
     return (
@@ -24,13 +27,36 @@ export default function Lunch() {
                             <div className='lunch-bottom-time'>
                                 <div className='lunch-time'>
                                     <button>
-                                        <span>🌞</span>
+                                        <img src={Breakicon}/>
                                     </button>
                                     <button>
-                                        <span>💝</span>
+                                        <img src={Lunchicon}/>
                                     </button>
                                     <button>
-                                        <span>🌞</span>
+                                        <img src={Dinnericon}/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='lunch-bottom-menu'>
+                            <div className='lunch-bottom-menu-musa'>
+                                <div className='lunch-bottom-menu-button'>
+                                    <button>
+                                        <img src='https://ifh.cc/g/m7tztq.png'/>
+                                    </button>
+                                </div>
+                                <div className='lunch-bottom-menu-menu'>
+                                    <p><span>감자</span></p>
+                                    <p><span>핫도그</span></p>
+                                    <p><span>우거지국</span></p>
+                                    <p><span>감자</span></p>
+                                    <p><span>우거지국</span></p>
+                                    <p><span>감자</span></p>
+                                    <p><span>우거지국</span></p>
+                                </div>
+                                <div className='lunch-bottom-menu-button'>
+                                    <button>
+                                        <img src='https://ifh.cc/g/2v62hD.png'/>
                                     </button>
                                 </div>
                             </div>
