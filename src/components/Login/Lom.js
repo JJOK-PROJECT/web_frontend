@@ -1,31 +1,31 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Modal from './Loginmodal';
-import { customAxios } from "../../config/axiosConfig ";
+// import { customAxios } from "../../config/axiosConfig ";
 import './Lom.scss';
 function App() {
 
-    const [request, setRequest] = useState({});
+    // const [request, setRequest] = useState({});
 
-    const handleChange = e => {
-        setRequest({
-            ...request,
-            [e.target.name]: e.target.value
-        });
-    };
+    // const handleChange = e => {
+    //     setRequest({
+    //         ...request,
+    //         [e.target.name]: e.target.value
+    //     });
+    // };
 
 
     const nav = useNavigate();
 
-    const login = async () => {
-        try {
-            const res = await customAxios.post("/login/signin", request);
-            localStorage.setItem("token", res.data.accessToken)
-            window.location.href = "/"
-        } catch (error) {
-            alert(error.response.data.status + ": " + error.response.data.message);
-        };
-    };
+    // const login = async () => {
+    //     try {
+    //         const res = await customAxios.post("/login/signin", request);
+    //         localStorage.setItem("token", res.data.accessToken)
+    //         window.location.href = "/"
+    //     } catch (error) {
+    //         alert(error.response.data.status + ": " + error.response.data.message);
+    //     };
+    // };
 
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -51,13 +51,13 @@ function App() {
                     <img className='img-t' src='https://ifh.cc/g/MYRSY6.png' width="50" height="70" />
                 </div>
                 <div className='login-field'>
-                    <input id="login-basic" placeholder='ID 입력' onChange={handleChange}></input>
+                    <input id="login-basic" placeholder='ID 입력' ></input>
                     <br />
-                    <input id="password-basic" placeholder='PW 입력' type='password' onChange={handleChange}></input>
+                    <input id="password-basic" placeholder='PW 입력' type='password'></input>
                 </div>
                 <div className='let-go-tit'>
                     <div className='let-go'>
-                        <button onClick={login}>로그인</button>
+                        {/* <button onClick={login}>로그인</button> */}
                     </div>
                 </div>
                 <div className='accounting'>

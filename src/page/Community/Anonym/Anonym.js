@@ -19,7 +19,7 @@ function Anonym() {
                         </div>
                     </div>
                     <div className='Anonym-bottom'>
-                        
+                        <Cmunone/>
                     </div>
                 </div>
             </section>
