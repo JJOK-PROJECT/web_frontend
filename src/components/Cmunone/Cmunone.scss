@@ -1,3 +1,5 @@
+@import '../../style/common.scss';
+
 .Cmunone-article{
     padding-bottom: 20px;
 }
@@ -25,5 +27,6 @@
     }
     &:hover{
         cursor: pointer;
+        background-color: $hover-color;
     }
 }
