@@ -1,0 +1,43 @@
+@import '../../../style/common.scss';
+
+.Advice-section {
+    height: 100vh;
+    background-color: $background-blue;
+    white-space: pre-wrap;
+}
+
+.Advice-tit {
+    .Advice-top {
+        position: relative;
+        top: 90px;
+        left: 30px;
+        display: inline-block;
+
+        .Advice-top-tit {
+            .annaemon {
+                float: left;
+                img {
+                }
+            }
+            span{
+                display: inline-block;
+                position: relative;
+                top: 10px;
+                left: 10px;
+                p{
+                    font-weight:lighter;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .Advice-bottom{
+        width: 80vw;
+        margin: 0 auto;
+        background-color: red;
+        position: relative;
+        top: 100px;
+        
+    }
+}
+

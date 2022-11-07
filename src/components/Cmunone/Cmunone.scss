@@ -1,0 +1,32 @@
+@import '../../style/common.scss';
+
+.Cmunone-article{
+    padding-bottom: 20px;
+}
+.Cmunone-list-one {
+    background-color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    .Cmunone-list-one-div {
+        .Cmunone-list-title {
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .Cmunone-list-right{
+            float: right;
+            .Cmunone-list-writer{
+                position: relative;
+                right: 10px;
+            }
+
+            .Cmunone-list-day {
+            }
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: $hover-color;
+    }
+}

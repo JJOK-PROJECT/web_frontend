@@ -1,32 +1,34 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Modal from './Loginmodal';
+// import { customAxios } from "../../config/axiosConfig ";
 import './Lom.scss';
 function App() {
 
-    const realId = "kiki@naver.com";
+    // const [request, setRequest] = useState({});
+
+    // const handleChange = e => {
+    //     setRequest({
+    //         ...request,
+    //         [e.target.name]: e.target.value
+    //     });
+    // };
+
+
     const nav = useNavigate();
-    const realPw = "12345678";
 
-    let [id, setId] = useState('');
-    let [pw, setPw] = useState('');
+    // const login = async () => {
+    //     try {
+    //         const res = await customAxios.post("/login/signin", request);
+    //         localStorage.setItem("token", res.data.accessToken)
+    //         window.location.href = "/"
+    //     } catch (error) {
+    //         alert(error.response.data.status + ": " + error.response.data.message);
+    //     };
+    // };
 
-    const handleinputid = (e) => {
-        setId(e.target.value);
-    }
-    const handleinputpw = (e) => {
-        setPw(e.target.value);
-    }
     const [modalOpen, setModalOpen] = useState(false);
-    const Login = () => {
-        if (realId === id && realPw === pw) {
-            closeModal();
-            nav('/');
-        }
-        else {
-            alert('비밀번호를 다시 확인해주세요!');
-        }
-    }
+
     const Signup = () => {
         closeModal();
         nav('/signup');
@@ -46,20 +48,20 @@ function App() {
                 </div>
                 <div className='l-title'>
                     <b>로그인</b>
-                    <img className='img-t' src='https://ifh.cc/g/MYRSY6.png' width="50" height="70"/>
+                    <img className='img-t' src='https://ifh.cc/g/MYRSY6.png' width="50" height="70" />
                 </div>
                 <div className='login-field'>
-                    <input id="login-basic" placeholder='ID 입력' onChange={handleinputid}></input>
+                    <input id="login-basic" placeholder='ID 입력' ></input>
                     <br />
-                    <input id="password-basic" placeholder='PW 입력' type='password' onChange={handleinputpw}></input>
+                    <input id="password-basic" placeholder='PW 입력' type='password'></input>
                 </div>
                 <div className='let-go-tit'>
                     <div className='let-go'>
-                        <button onClick={()=>Login()}>로그인</button>
+                        {/* <button onClick={login}>로그인</button> */}
                     </div>
                 </div>
                 <div className='accounting'>
-                    <span onClick={()=>Signup()}>회원가입</span>
+                    <span onClick={() => Signup()}>회원가입</span>
                     <br />
                     <span>비밀번호를 잊어버리셨나요?</span>
                 </div>

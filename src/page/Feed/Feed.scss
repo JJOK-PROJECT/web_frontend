@@ -1,0 +1,28 @@
+@import '../../style/common.scss';
+
+.Feed-section {
+    background-color: $background-blue;
+    position: relative;
+    top: 60px;
+    width: 80vw;
+    margin: 0 auto;
+    .Feed-top {
+        background-color: red;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 15px;
+        .Feed-top-title {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .Feed-top-right {
+            float: right;
+            .Feed-top-writer {
+                padding-right: 10px;
+            }
+
+            .Feed-top-day {}
+        }
+    }
+}
