@@ -8,6 +8,7 @@ import Advice from "./page/Community/Advice/Advice";
 import Normal from "./page/Community/Normal/Normal";
 import Anonym from "./page/Community/Anonym/Anonym";
 import Feed from "./page/Feed/Feed";
+import Roadview from "./page/Roadview/Roadview";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
           <Route path='/welbato/hotadvice' element={<Advice/>}/>
           <Route path='/welbato/community' element={<Normal/>}/>
           <Route path='/welbato/feed' element={<Feed/>}/>
+          <Route path='/welbato/roadview' element={<Roadview/>}/>
         </Routes>
     </BrowserRouter>
   );
