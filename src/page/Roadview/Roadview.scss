@@ -1,0 +1,70 @@
+@import '../../style/common.scss';
+
+iframe {
+    width: 60vw;
+    height: 70vh;
+}
+
+.Metabus_section {
+    background-color: $background-blue;
+    height: 100vh;
+
+    .Metabus_div {
+
+        .meta-top {
+            position: relative;
+            top: 90px;
+            left: 30px;
+            display: inline-block;
+
+            .meta-top-tit {
+                .annaemon {
+                    float: left ;
+                }
+
+                span {
+                    display: inline-block;
+                    position: relative;
+                    top: 10px;
+                    left: 10px;
+
+                    p {
+                        font-weight: lighter;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .Metabus_iframe{        
+            text-align: center;
+            position: relative;
+            top: 50px;
+        }
+        .Metabus_ment{
+            text-align: center;
+            position: relative;
+            top: 60px;
+            .roadview{
+                a{
+                    padding: 5px;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        background-color: #e3e3e3;
+                    }
+                }
+            }
+            span{
+                text-decoration: none;
+                font-weight: 300;
+                position: relative;
+                top: 5px;
+            }
+            a{
+                
+            }
+        }
+    }
+
+}
