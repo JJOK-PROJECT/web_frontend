@@ -9,8 +9,7 @@ function App() {
 
     const handleChange = e => {
         setRequest({
-            ...request,
-            [e.target.name]: e.target.value
+            ...request, [e.target.name]: e.target.value
         })
     }
 
