@@ -2,7 +2,7 @@ import './Normal.scss';
 import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
-import NormalData from './Normal.json';
+import FeedData from '../feedlist.json';
 function Normal() {
     return (
         <>
@@ -19,7 +19,23 @@ function Normal() {
                         </div>
                     </div>
                     <div className='Normal-bottom'>
+                        <div className='Normal-bottom-cmunone'>
+                            {FeedData.data.map(f => (
+                                <Cmunone
+                                    id={f.id}
+                                    uid={f.uid}
+                                    title={f.title}
+                                    contact={f.contact}
+                                    heart={f.heart}
+                                    userName={f.userName}
+                                    upload_date={f.upload_date}
+                                    isNotice={f.isNotice}
+                                    isPrivate={f.isPrivate}
+                                    isHot={f.isHot}
 
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

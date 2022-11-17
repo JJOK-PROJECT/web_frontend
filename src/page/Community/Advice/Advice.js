@@ -2,7 +2,7 @@ import './Advice.scss';
 import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
-import AdviceData from './Advice.json';
+import FeedData from '../feedlist.json';
 export default function Advice() {
     return (
         <>
@@ -20,18 +20,18 @@ export default function Advice() {
                     </div>
                     <div className='Advice-bottom'>
                         <div className='Advice-bottom-cmunone'>
-                            {AdviceData.data.map(d => (
+                            {FeedData.data.map(f => (
                                 <Cmunone
-                                    id={d.id}
-                                    uid={d.uid}
-                                    title={d.title}
-                                    contact={d.contact}
-                                    heart={d.heart}
-                                    userName={d.userName}
-                                    upload_date={d.upload_date}
-                                    isNotice={d.isNotice}
-                                    isPrivate={d.isPrivate}
-                                    isHot={d.isHot}
+                                    id={f.id}
+                                    uid={f.uid}
+                                    title={f.title}
+                                    contact={f.contact}
+                                    heart={f.heart}
+                                    userName={f.userName}
+                                    upload_date={f.upload_date}
+                                    isNotice={f.isNotice}
+                                    isPrivate={f.isPrivate}
+                                    isHot={f.isHot}
 
                                 />
                             ))}
