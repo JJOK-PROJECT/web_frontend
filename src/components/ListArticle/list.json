@@ -19,14 +19,14 @@
       "image": "https://ifh.cc/g/fxBzW4.png",
       "name": "익명\n커뮤니티",
       "message": "재학생 및 졸업생들과\n편안하게 질문해보세요!",
-      "link":"anonymous"
+      "link":"community/anonymous"
     },
     {
       "id": 4,
       "image": "https://ifh.cc/g/4GRK1V.png",
       "name": "뜨끈조언",
       "message": "선배들에게\n다양한 조언을 얻어보세요!",
-      "link": "hotadvice"
+      "link": "community/hotadvice"
     },
     {
       "id": 5,
