@@ -3,13 +3,19 @@
 .Cmunone-article{
     padding-bottom: 20px;
 }
+.Cmunone-tit-tit{
+    padding-bottom: 20px;
+}
 .Cmunone-list-one {
+    color: black;
     background-color: white;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
     height: 50px;
     line-height: 50px;
     padding: 5px 15px;
     border-radius: 15px;
     .Cmunone-list-one-div {
+        text-decoration-line: none;
         .Cmunone-list-title {
             font-size: 23px;
             font-weight: 600;

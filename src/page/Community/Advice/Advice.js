@@ -3,7 +3,7 @@ import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
 import AdviceData from './Advice.json';
-function Advice() {
+export default function Advice() {
     return (
         <>
             <section className='Advice-section'>
@@ -19,11 +19,26 @@ function Advice() {
                         </div>
                     </div>
                     <div className='Advice-bottom'>
-                        
+                        <div className='Advice-bottom-cmunone'>
+                            {AdviceData.data.map(d => (
+                                <Cmunone
+                                    id={d.id}
+                                    uid={d.uid}
+                                    title={d.title}
+                                    contact={d.contact}
+                                    heart={d.heart}
+                                    userName={d.userName}
+                                    upload_date={d.upload_date}
+                                    isNotice={d.isNotice}
+                                    isPrivate={d.isPrivate}
+                                    isHot={d.isHot}
+
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
         </>
     )
 }
-export default Advice;

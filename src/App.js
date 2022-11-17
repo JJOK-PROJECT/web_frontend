@@ -9,6 +9,7 @@ import Normal from "./page/Community/Normal/Normal";
 import Anonym from "./page/Community/Anonym/Anonym";
 import Feed from "./page/Feed/Feed";
 import Roadview from "./page/Roadview/Roadview";
+import Schoolschdule from "./page/Schoolschdule/Schoolschdule";
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
           <Route path='/welbato/community' element={<Normal/>}/>
           <Route path='/welbato/feed' element={<Feed/>}/>
           <Route path='/welbato/roadview' element={<Roadview/>}/>
+          <Route path='/welbato/schoolschdule' element={<Schoolschdule/>}/>
         </Routes>
     </BrowserRouter>
   );
