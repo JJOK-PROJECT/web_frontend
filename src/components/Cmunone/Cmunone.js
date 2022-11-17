@@ -1,24 +1,29 @@
 import './Cmunone.scss';
+import { Link } from 'react-router-dom';
 
-function Cmunone() {
+
+function Cmunone(props) {
     return (
-        <article className='Cmunone-article'>
+        <div className='Cmunone-tit-tit'>
+        <Link to={`/product/${props.id}`} style={{ textDecoration: "none" }}>
             <div className='Cmunone-list-one'>
                 <div className='Cmunone-list-one-div'>
                     <span className='Cmunone-list-title'>
-                        제목
+                        {props.title}
                     </span>
                     <span className='Cmunone-list-right'>
                         <span className='Cmunone-list-writer'>
-                            작성자
+                            {props.userName}
                         </span>
                         <span className='Cmunone-list-day'>
-                            00-00-00
+                            {props.upload_date}
                         </span>
                     </span>
                 </div>
+
             </div>
-        </article>
+        </Link>
+        </div>
     )
 }
 export default Cmunone;
