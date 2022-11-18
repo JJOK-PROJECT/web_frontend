@@ -19,28 +19,23 @@ function Anonym() {
                         </div>
                     </div>
                     <div className='Anonym-bottom'>
-                        {FeedData.data.isPrivate === 1 ?
-                            <div className='Anonym-bottom-cmunone'>
-                                {FeedData.data.map(f => (
-                                    <Cmunone
-                                        id={f.id}
-                                        uid={f.uid}
-                                        title={f.title}
-                                        contact={f.contact}
-                                        heart={f.heart}
-                                        userName={f.userName}
-                                        upload_date={f.upload_date}
-                                        isNotice={f.isNotice}
-                                        isPrivate={f.isPrivate}
-                                        isHot={f.isHot}
+                        <div className='Anonym-bottom-cmunone'>
+                            {FeedData.data.map(f => (
+                                <Cmunone
+                                    id={f.id}
+                                    uid={f.uid}
+                                    title={f.title}
+                                    contact={f.contact}
+                                    heart={f.heart}
+                                    userName={f.userName}
+                                    upload_date={f.upload_date}
+                                    isNotice={f.isNotice}
+                                    isPrivate={f.isPrivate}
+                                    isHot={f.isHot}
 
-                                    />
-                                ))}
-                            </div>
-                            :
-                            <div>
-                            </div>
-                        }
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
