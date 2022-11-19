@@ -1,3 +1,4 @@
+import FeedData from './feed.json';
 import './Feed.scss';
 function Feed() {
     return (
@@ -5,25 +6,17 @@ function Feed() {
             <div className='Feed-div-tit-div'>
                 <div className='Feed-div-tit'>
                     <div className='Feed-top'>
-                        <span className='Feed-top-title'>제목</span>
+                        <span className='Feed-top-title'>{FeedData.title}</span>
                         <span className='Feed-top-right'>
-                            <span className='Feed-top-writer'>작성자</span>
-                            <span className='Feed=top-day'>00-00-00</span>
+                            <span className='Feed-top-writer'>{FeedData.userName}</span>
+                            <span className='Feed=top-day'>{FeedData.upload_date.substr(0,10)}</span>
                         </span>
                     </div>
                     <hr className='Feed-section-top' />
                     <div className='Feed-bottom'>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
-                        <div>dddd</div>
+                        <div>
+                            <img src={FeedData.image_path}/>
+                        </div>
                     </div>
                 </div>
             </div>
