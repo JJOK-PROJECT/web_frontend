@@ -6,23 +6,7 @@ import Lunchicon from "../../assets/icon/lunch.svg";
 import Breakicon from "../../assets/icon/breakfast.svg";
 import Dinnericon from "../../assets/icon/dinner.svg";
 export default function Lunch() {
-    const [meals, setMeals] = useState(null);
-    const [loading, setLoading] = useState(null);
-    const [error, setError] = useState(null);
-    useEffect(() => {
-        const fetchMeals = async () => {
-            try {
-                setMeals(null);
-                setLoading(true);
-                const response = await axios.get('http://13.125.225.199:8000/api/school/neisAPI/meal?year=2022&month=9');
-                setMeals(response.data);
-            } catch (e) {
-                setError(e);
-            }
-            setLoading(false);
-        };
-        fetchMeals();
-    }, []);
+    
     let now = new Date();
     let year = now.getFullYear();
     let todayMonth = now.getMonth() + 1;
