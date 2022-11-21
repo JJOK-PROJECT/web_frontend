@@ -3,16 +3,21 @@ import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
 import React, { useState, useEffect } from "react";
+import { customAxios } from '../../../config/axiosConfig';
 import axios from 'axios';
 function Anonym() {
 
+    const [users, setUsers] = useState([]);
+
     useEffect(() => {
-        axios.get("http://13.125.225.199:8003/all_contect")
-            .then((response) => console.log(response.data));
+        axios.get('http://13.125.225.199:8003/all_contect')
+            .then(response => {
+                setUsers(response.data);
+            });
     }, []);
 
 
-    console.log(useEffect.data);
+
     return (
         <>
             <section className='Anonym-section'>
@@ -29,7 +34,7 @@ function Anonym() {
                     </div>
                     <div className='Anonym-bottom'>
                         <div className='Anonym-bottom-cmunone'>
-                            {useEffect.data && useEffect.data.map(f => (
+                            {users.data && users.data.map(f => (
                                 <Cmunone
                                     id={f.id}
                                     uid={f.uid}
