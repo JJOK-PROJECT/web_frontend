@@ -24,9 +24,9 @@ export default function Mealapis() {
     return (
         <ul>
             {meals.map(meal => (
-                <li key={meal.id}>
-                    {meal.time} ({meal.study})
-                </li>
+                <p key={meal.id}>
+                    {meal.study}
+                </p>
             ))}
         </ul>
     );

@@ -24,7 +24,7 @@ function App() {
           <Route path='/welbato/community' element={<Normal/>}/>
           <Route path='/welbato/feed' element={<Feed/>}/>
           <Route path='/welbato/roadview' element={<Roadview/>}/>
-          <Route path='/welbato/schdule' element={<Timetable/>}/>
+          <Route path='/welbato/timetable' element={<Timetable/>}/>
           <Route path='/welbato/schoolschdule' element={<Schoolschdule/>}/>
         </Routes>
     </BrowserRouter>

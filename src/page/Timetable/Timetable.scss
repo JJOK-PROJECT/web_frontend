@@ -9,13 +9,13 @@
     height: 100%;
     background-color: #EFF5FF;
 
-    .lunch-top {
+    .Time-top {
         position: relative;
         top: 90px;
         left: 30px;
         display: inline-block;
 
-        .lunch-top-tit {
+        .Time-top-tit {
             .annaemon {
                 float: left;
 
@@ -35,97 +35,33 @@
             }
         }
     }
-
-    .lunch-bottom {
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        height: 70%;
-
-        .lunch-bottom-tit {
-            .lunch-day {
-                text-align: center;
-                position: relative;
-                top: 10px;
-
-                span {
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 25px;
-                }
+    .classbox {
+        position: absolute;
+        top: 100px;
+        left: 80%;
+        .graded {
+            position: relative;
+            width: 7vw;
+            height: 6vh;
+            border: 0;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 20px;
+            text-align: center;
+            option:hover {
+                background-color: antiquewhite;
             }
-
-            .lunch-bottom-bottom {
-                display: flex;
-                justify-content: center;
-                position: relative;
-                top: 40px;
-
-                .lunch-bottom-time {
-                    width: 20%;
-
-                    .lunch-time {
-                        display: flex;
-                        justify-content: space-between;
-
-                        button {
-                            background-color: transparent;
-                            border: none;
-
-                            img {}
-
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .lunch-bottom-menu {
-                width: 100%;
-                position: relative;
-                top: 70px;
-                display: flex;
-                justify-content: center;
-                .lunch-bottom-menu-musa {
-                    align-items: center;
-                    width: 45%;
-                    display: flex;
-                    justify-content: space-between;
-                    .lunch-bottom-menu-button {
-                        button {
-                            background-color: white;
-                            border: none;
-                            border-radius: 130px;
-                            width: 65px;
-                            height: 65px;
-                            img {
-                                width: 18px;
-                            }
-                            &:hover{
-                                cursor: pointer;
-                            }
-                        }
-                    }
-
-                    .lunch-bottom-menu-menu {
-                        align-items: center;
-                        text-align: center;
-                        background-color: white;
-                        width: 60%;
-                        height: 300px;
-                        border-radius: 10px;
-                        p {
-                            
-                            span {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-
-                }
-            }
+        }
+        .classed {
+            position: relative;
+            left: 20px;
+            width: 7vw;
+            height: 6vh;
+            border: 0;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 20px;
+            text-align: center;
         }
     }
 }
