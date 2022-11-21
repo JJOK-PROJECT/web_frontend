@@ -42,7 +42,7 @@ export default function Timetable() {
                         ))}
                     </select>
                 </div>
-                <Mealapis/>
+                <Mealapis grade={grades} classing={classed}/>
             </div>
         </section>
     );

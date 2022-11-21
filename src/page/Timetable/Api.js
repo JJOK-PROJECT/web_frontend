@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-export default function Mealapis() {
+export default function Mealapis(props) {
     const [meals, setMeals] = useState(null);
     const [loading, setLoading] = useState(null);
     const [error, setError] = useState(null);
-    useEffect(() => {
-        const fetchMeals = async () => {
+    useEffect((props) => {
+        const fetchMeals = async (props) => {
             try {
                 setMeals(null);
                 setLoading(true);
-                const response = await axios.get('http://13.125.225.199:8002/api/school/neisAPI/timeline?grade=2&classs=2');
+                const response = await axios.get(`http://13.125.225.199:8002/api/school/neisAPI/timeline?grade=${props.grade}&classs=${props.classing}`);
                 setMeals(response.data);
             } catch (e) {
                 setError(e);
