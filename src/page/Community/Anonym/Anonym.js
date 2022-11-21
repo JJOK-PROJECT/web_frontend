@@ -2,8 +2,17 @@ import './Anonym.scss';
 import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
-import FeedData from '../feedlist.json';
+import React, { useState, useEffect } from "react";
+import axios from 'axios';
 function Anonym() {
+
+    useEffect(() => {
+        axios.get("http://13.125.225.199:8003/all_contect")
+            .then((response) => console.log(response.data));
+    }, []);
+
+
+    console.log(useEffect.data);
     return (
         <>
             <section className='Anonym-section'>
@@ -20,7 +29,7 @@ function Anonym() {
                     </div>
                     <div className='Anonym-bottom'>
                         <div className='Anonym-bottom-cmunone'>
-                            {FeedData.data.map(f => (
+                            {useEffect.data && useEffect.data.map(f => (
                                 <Cmunone
                                     id={f.id}
                                     uid={f.uid}
@@ -32,7 +41,6 @@ function Anonym() {
                                     isNotice={f.isNotice}
                                     isPrivate={f.isPrivate}
                                     isHot={f.isHot}
-
                                 />
                             ))}
                         </div>

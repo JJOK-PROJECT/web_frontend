@@ -4,6 +4,8 @@ import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
 import FeedData from '../feedlist.json';
 export default function Advice() {
+    const n = FeedData.data.isNotice;
+
     return (
         <>
             <section className='Advice-section'>
@@ -19,6 +21,7 @@ export default function Advice() {
                         </div>
                     </div>
                     <div className='Advice-bottom'>
+                        { n === 0 ?
                         <div className='Advice-bottom-cmunone'>
                             {FeedData.data.map(f => (
                                 <Cmunone
@@ -36,6 +39,9 @@ export default function Advice() {
                                 />
                             ))}
                         </div>
+                            :
+                            <></>
+                            }
                     </div>
                 </div>
             </section>
