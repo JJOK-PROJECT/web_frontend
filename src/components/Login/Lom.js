@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Modal from './Loginmodal';
 import { customAxios } from "../../config/axiosConfig";
+import logo from '../../assets/icon/logo.png'
 import './Lom.scss';
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
             <button onClick={openModal} className="modalbutton-login">로그인</button>
             <Modal open={modalOpen} close={closeModal}>
                 <div className='l-header'>
-                    <img src='icon/logo.png' width="150" height="26" />
+                    <img src={logo} width="150" height="26" />
                 </div>
                 <div className='l-title'>
                     <b>로그인</b>

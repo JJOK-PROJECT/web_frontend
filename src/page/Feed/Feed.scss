@@ -2,27 +2,45 @@
 
 .Feed-section {
     background-color: $background-blue;
+    height: 100vh;
+}
+
+.Feed-div-tit-div {
+    background-color: white;
+    border-radius: 30px;
     position: relative;
-    top: 60px;
+    top: 100px;
     width: 80vw;
     margin: 0 auto;
-    .Feed-top {
-        background-color: red;
-        height: 60px;
-        line-height: 60px;
-        padding: 0px 15px;
-        .Feed-top-title {
-            font-size: 30px;
-            font-weight: 700;
-        }
+    .Feed-div-tit {
+        padding: 20px 70px;
+        .Feed-top {
+            height: 60px;
+            line-height: 60px;
 
-        .Feed-top-right {
-            float: right;
-            .Feed-top-writer {
-                padding-right: 10px;
+            .Feed-top-title {
+                font-size: 30px;
+                font-weight: 700;
             }
 
-            .Feed-top-day {}
+            .Feed-top-right {
+                float: right;
+
+                .Feed-top-writer {
+                    padding-right: 10px;
+                }
+
+                .Feed-top-day {}
+            }
+        }
+
+        .Feed-section-top {
+            width: 100%
+        }
+        .Feed-bottom{
+            position: relative;
+            top: 10px;
+            padding-bottom: 20px;
         }
     }
 }

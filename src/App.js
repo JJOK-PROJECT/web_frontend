@@ -18,10 +18,10 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/welbato/lunch' element={<Lunch/>}/>
-          <Route path='/welbato/anonymous' element={<Anonym/>}/>
-          <Route path='/welbato/hotadvice' element={<Advice/>}/>
+          <Route path='/welbato/community/anonymous' element={<Anonym/>}/>
+          <Route path='/welbato/community/hotadvice' element={<Advice/>}/>
           <Route path='/welbato/community' element={<Normal/>}/>
-          <Route path='/welbato/feed' element={<Feed/>}/>
+          <Route path='/welbato/community/feed/1' element={<Feed/>}/>
           <Route path='/welbato/roadview' element={<Roadview/>}/>
           <Route path='/welbato/schoolschdule' element={<Schoolschdule/>}/>
         </Routes>
