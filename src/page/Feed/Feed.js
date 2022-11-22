@@ -15,7 +15,7 @@ function Feed() {
                     <hr className='Feed-section-top' />
                     <div className='Feed-bottom'>
                         <div>
-                            <img src={FeedData.image_path}/>
+                            
                         </div>
                     </div>
                 </div>

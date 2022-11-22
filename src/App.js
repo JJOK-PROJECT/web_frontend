@@ -21,7 +21,7 @@ function App() {
           <Route path='/welbato/community/anonymous' element={<Anonym/>}/>
           <Route path='/welbato/community/hotadvice' element={<Advice/>}/>
           <Route path='/welbato/community' element={<Normal/>}/>
-          <Route path='/welbato/community/feed/1' element={<Feed/>}/>
+          <Route path='/welbato/community/feed/:id' element={<Feed/>}/>
           <Route path='/welbato/roadview' element={<Roadview/>}/>
           <Route path='/welbato/schoolschdule' element={<Schoolschdule/>}/>
         </Routes>

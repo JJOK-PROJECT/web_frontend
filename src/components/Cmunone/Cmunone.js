@@ -27,7 +27,7 @@ function Cmunone(props) {
                 </div>
 
             </div>
-        </Link>
+        </Link>  
         </div>
     )
 }

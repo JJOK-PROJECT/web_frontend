@@ -3,7 +3,6 @@ import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
 import React, { useState, useEffect } from "react";
-import { customAxios } from '../../../config/axiosConfig';
 import axios from 'axios';
 function Anonym() {
 
@@ -25,7 +24,7 @@ function Anonym() {
                 <div className='Anonym-tit'>
                     <div className='Anonym-top'>
                         <div className='Anonym-top-tit'>
-                            <div className='annaemon'><img src={List.list[2].image} /></div>
+                            <div className='annaemon'><img src={List.list[3].image} /></div>
                             <span>
                                 <p>재학생 및 졸업생들과</p>
                                 <p>익명으로 소통해보세요!</p>

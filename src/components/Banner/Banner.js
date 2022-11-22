@@ -12,6 +12,9 @@ import Header from '../Header/Header'
 SwiperCore.use([Pagination, Autoplay, EffectFade])
 
 function Banner(props){
+    
+    
+
     const[activeIndex, setActiveIndex] = useState(1)
     return(
         <div className='banner_tit'>

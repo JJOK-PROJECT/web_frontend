@@ -63,7 +63,7 @@ export default function Lunch() {
             <div className='Lunch-tit'>
                 <div className='lunch-top'>
                     <div className='lunch-top-tit'>
-                        <div className='annaemon'><img src={List.list[4].image} /></div>
+                        <div className='annaemon'><img src={List.list[5].image} /></div>
                         <span>
                             <p>오늘의 급식을</p>
                             <p>확인하세요!</p>
