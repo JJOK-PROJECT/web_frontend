@@ -1,10 +1,12 @@
 import './Lunch.scss';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import List from "../../components/ListArticle/list.json";
 import Lunchicon from "../../assets/icon/lunch.svg";
 import Breakicon from "../../assets/icon/breakfast.svg";
 import Dinnericon from "../../assets/icon/dinner.svg";
 export default function Lunch() {
+    
     let now = new Date();
     let year = now.getFullYear();
     let todayMonth = now.getMonth() + 1;
@@ -98,13 +100,7 @@ export default function Lunch() {
                                     </button>
                                 </div>
                                 <div className='lunch-bottom-menu-menu'>
-                                    <p><span>감자</span></p>
-                                    <p><span>핫도그</span></p>
-                                    <p><span>우거지국</span></p>
-                                    <p><span>감자</span></p>
-                                    <p><span>우거지국</span></p>
-                                    <p><span>감자</span></p>
-                                    <p><span>우거지국</span></p>
+                                    
                                 </div>
                                 <div className='lunch-bottom-menu-button'>
                                     <button onClick={plusdate}>

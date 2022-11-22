@@ -1,0 +1,102 @@
+@import '../../style/common.scss';
+
+.Time-section {
+    height: 100vh;
+    background-color: $background-blue;
+}
+
+.Time-tit {
+    height: 100%;
+    background-color: #EFF5FF;
+
+    .Time-top {
+        position: relative;
+        top: 90px;
+        left: 30px;
+        display: inline-block;
+
+        .Time-top-tit {
+            .annaemon {
+                float: left;
+
+                img {}
+            }
+
+            span {
+                display: inline-block;
+                position: relative;
+                top: 10px;
+                left: 10px;
+
+                p {
+                    font-weight: lighter;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .classbox {
+        position: absolute;
+        top: 100px;
+        left: 80%;
+        .graded {
+            position: relative;
+            width: 7vw;
+            height: 6vh;
+            border: 0;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 20px;
+            text-align: center;
+            option:hover {
+                background-color: antiquewhite;
+            }
+        }
+        .classed {
+            position: relative;
+            left: 20px;
+            width: 7vw;
+            height: 6vh;
+            border: 0;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .time-box {
+        position: absolute;
+        left: 25%;
+        top: 30%;
+        width: 800px;
+        height: 400px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        text-align: center;
+        .time {
+            position: absolute;
+            left: 40px;
+        }
+        .classing {
+            position: absolute;
+            left: 300px;
+            .infadein{
+                animation: fadein 1.5s;
+                @keyframes fadein {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+            .spacing {
+                margin-top: 24px;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        }
+    }
+}
