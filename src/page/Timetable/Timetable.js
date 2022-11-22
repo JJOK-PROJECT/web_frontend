@@ -4,17 +4,17 @@ import { useState } from 'react';
 import './Timetable.scss';
 import List from "../../components/ListArticle/list.json";
 export default function Timetable() {
-    const grade = ["1학년", "2학년"];
-    const classes = ["1반", "2반", "3반", "4반"];
-    const [grades, setGrades] = useState("1학년");
-    const [classed, setClassed] = useState("1반");
+    const grade = ["1", "2"];
+    const classes = ["1", "2", "3", "4"];
+    const [grades, setGrades] = useState("1");
+    const [classed, setClassed] = useState("1");
     function handlegrade(e) {
         setGrades(e.target.value);
     }
     function handleclass(e) {
         setClassed(e.target.value);
     }
-    return(
+    return (
         <section className='Time-section'>
             <div className='Time-tit'>
                 <div className='Time-top'>
@@ -30,19 +30,32 @@ export default function Timetable() {
                     <select onChange={handlegrade} value={grades} className="graded">
                         {grade.map((item) => (
                             <option value={item} key={item} className="hovers">
-                                {item}
+                                {item}학년
                             </option>
                         ))}
                     </select>
                     <select onChange={handleclass} value={classed} className="classed">
                         {classes.map((item) => (
                             <option value={item} key={item}>
-                                {item}
+                                {item}반
                             </option>
                         ))}
                     </select>
                 </div>
-                <Mealapis grade={grades} classing={classed}/>
+                <div className='time-box'>
+                    <div className='time'>
+                        <h2>1교시</h2>
+                        <h2>2교시</h2>
+                        <h2>3교시</h2>
+                        <h2>4교시</h2>
+                        <h2>5교시</h2>
+                        <h2>6교시</h2>
+                        <h2>7교시</h2>
+                    </div>
+                    <div className='classing'>
+                        <Mealapis grade={grades} classing={classed} />
+                    </div>
+                </div>
             </div>
         </section>
     );

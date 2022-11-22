@@ -100,13 +100,7 @@ export default function Lunch() {
                                     </button>
                                 </div>
                                 <div className='lunch-bottom-menu-menu'>
-                                    <p><span>감자</span></p>
-                                    <p><span>핫도그</span></p>
-                                    <p><span>우거지국</span></p>
-                                    <p><span>감자</span></p>
-                                    <p><span>우거지국</span></p>
-                                    <p><span>감자</span></p>
-                                    <p><span>우거지국</span></p>
+                                    
                                 </div>
                                 <div className='lunch-bottom-menu-button'>
                                     <button onClick={plusdate}>

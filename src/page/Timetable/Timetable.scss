@@ -64,4 +64,39 @@
             text-align: center;
         }
     }
+
+    .time-box {
+        position: absolute;
+        left: 25%;
+        top: 30%;
+        width: 800px;
+        height: 400px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        text-align: center;
+        .time {
+            position: absolute;
+            left: 40px;
+        }
+        .classing {
+            position: absolute;
+            left: 300px;
+            .infadein{
+                animation: fadein 1.5s;
+                @keyframes fadein {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+            .spacing {
+                margin-top: 24px;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        }
+    }
 }
