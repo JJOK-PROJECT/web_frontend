@@ -34,6 +34,7 @@ function Normal() {
                             <div className='Normal-bottom-cmunone'>
                                 {
                                     users.data && users.data.map(f => (
+                                        f.isPrivate === 0 && f.isHot === 0 ?
                                         <Cmunone
                                             id={f.id}
                                             uid={f.uid}
@@ -47,6 +48,8 @@ function Normal() {
                                             isHot={f.isHot}
 
                                         />
+                                        :
+                                        <></>
                                     ))
                                 }
                             </div>

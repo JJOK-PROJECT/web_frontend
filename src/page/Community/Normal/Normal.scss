@@ -1,16 +1,18 @@
 @import '../../../style/common.scss';
 
 .Normal-section {
-    height: 100%;
-    padding-bottom: 130px;
     background-color: $background-blue;
     white-space: pre-wrap;
+    height: 100vh;
 }
 
 .Normal-tit {
+    position: relative;
+    top: 90px;
+    height: 100%;
+    
     .Normal-top {
         position: relative;
-        top: 90px;
         left: 30px;
         display: inline-block;
 
@@ -36,7 +38,7 @@
         width: 80vw;
         margin: 0 auto;
         position: relative;
-        top: 120px;
+        top: 10px;
         
     }
 }

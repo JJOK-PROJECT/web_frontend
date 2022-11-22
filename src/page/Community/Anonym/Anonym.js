@@ -14,9 +14,6 @@ function Anonym() {
                 setUsers(response.data);
             });
     }, []);
-
-
-
     return (
         <>
             <section className='Anonym-section'>
@@ -34,6 +31,7 @@ function Anonym() {
                     <div className='Anonym-bottom'>
                         <div className='Anonym-bottom-cmunone'>
                             {users.data && users.data.map(f => (
+                                f.isPrivate === 1 ?
                                 <Cmunone
                                     id={f.id}
                                     uid={f.uid}
@@ -46,6 +44,9 @@ function Anonym() {
                                     isPrivate={f.isPrivate}
                                     isHot={f.isHot}
                                 />
+                                :
+                                <>
+                                </>
                             ))}
                         </div>
                     </div>

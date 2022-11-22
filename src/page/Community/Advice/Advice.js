@@ -32,6 +32,7 @@ export default function Advice() {
                     <div className='Advice-bottom'>
                         <div className='Advice-bottom-cmunone'>
                             {users.data && users.data.map(f => (
+                                f.isHot === 1 ?
                                 <Cmunone
                                     id={f.id}
                                     uid={f.uid}
@@ -45,6 +46,9 @@ export default function Advice() {
                                     isHot={f.isHot}
 
                                 />
+                                :
+                                <>
+                                </>
                             ))}
                         </div>
                     </div>
