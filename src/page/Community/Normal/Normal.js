@@ -31,28 +31,30 @@ function Normal() {
                         </div>
                     </div>
                     <div className='Normal-bottom'>
+                        <div className='Normal-bottom-div'>
                             <div className='Normal-bottom-cmunone'>
                                 {
                                     users.data && users.data.map(f => (
                                         f.isPrivate === 0 && f.isHot === 0 ?
-                                        <Cmunone
-                                            id={f.id}
-                                            uid={f.uid}
-                                            title={f.title}
-                                            contact={f.contact}
-                                            heart={f.heart}
-                                            userName={f.userName}
-                                            upload_date={f.upload_date}
-                                            isNotice={f.isNotice}
-                                            isPrivate={f.isPrivate}
-                                            isHot={f.isHot}
+                                            <Cmunone
+                                                id={f.id}
+                                                uid={f.uid}
+                                                title={f.title}
+                                                contact={f.contact}
+                                                heart={f.heart}
+                                                userName={f.userName}
+                                                upload_date={f.upload_date}
+                                                isNotice={f.isNotice}
+                                                isPrivate={f.isPrivate}
+                                                isHot={f.isHot}
 
-                                        />
-                                        :
-                                        <></>
+                                            />
+                                            :
+                                            <></>
                                     ))
                                 }
                             </div>
+                        </div>
                     </div>
                 </div>
             </section>
