@@ -1,5 +1,5 @@
 import React from 'react';
-import Mealapis from './Api';
+import Timeapis from './Api';
 import { useState } from 'react';
 import './Timetable.scss';
 import List from "../../components/ListArticle/list.json";
@@ -53,7 +53,7 @@ export default function Timetable() {
                         <h2>7교시</h2>
                     </div>
                     <div className='classing'>
-                        <Mealapis grade={grades} classing={classed} />
+                        <Timeapis grade={grades} classing={classed} />
                     </div>
                 </div>
             </div>
