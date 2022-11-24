@@ -1,5 +1,6 @@
 import './Signup.scss';
 import { Link } from 'react-router-dom'
+import sova from '../../assets/icon/so.png';
 export default function Singup() {
     return (
         <body className='hotbody'>
@@ -10,7 +11,7 @@ export default function Singup() {
             </Link>
             <div className='registerform'>
                 <h1 className='ugro'>회원가입</h1>
-                <img className='so' src='icon/so.png' width="50" height="40" alt='정현우' />
+                <img className='so' src={sova} width="50" height="40" />
                 <form>
                     <input className='inputId' id="signup_input" placeholder='ID 입력' />
                     <input className='inputPw' id="signup_input" placeholder='PW 입력' />

@@ -1,0 +1,30 @@
+@import '../../style/common.scss';
+.footer{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    .footer-jjok{
+        span{
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+    .footer-developer{
+        span{
+            color: black;
+            font-size: 13px;
+        }
+        a{
+            text-decoration: none;
+            span{
+            }
+        }
+    }
+    .footer-copy{
+        span{
+            font-size: 10px;
+        }
+    }
+}
