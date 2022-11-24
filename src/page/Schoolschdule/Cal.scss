@@ -1,80 +1,80 @@
-.App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+// .App {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 100px;
 
-    .control {
-        display: flex;
-        flex-direction: row;
-        .prev {
-            width: 90px;
-            height: 40px;
-            border: 0;
-            background-color: white;
-            font-size: 18px;
-        }
-        .prev:hover {
-            cursor: pointer;
-            background-color: lightgray;
-        }
-        span {
-            margin-left: 50px;
-            font-size: 20px;
-        }
-        .next {
-            width: 90px;
-            height: 40px;
-            margin-left: 50px;
-            border: 0;
-            background-color: white;
-            font-size: 18px;
-        }
-        .next:hover {
-            cursor: pointer;
-            background-color: lightgray;
-        }
-    }
-}
+//     .control {
+//         display: flex;
+//         flex-direction: row;
+//         .prev {
+//             width: 90px;
+//             height: 40px;
+//             border: 0;
+//             background-color: white;
+//             font-size: 18px;
+//         }
+//         .prev:hover {
+//             cursor: pointer;
+//             background-color: lightgray;
+//         }
+//         span {
+//             margin-left: 50px;
+//             font-size: 20px;
+//         }
+//         .next {
+//             width: 90px;
+//             height: 40px;
+//             margin-left: 50px;
+//             border: 0;
+//             background-color: white;
+//             font-size: 18px;
+//         }
+//         .next:hover {
+//             cursor: pointer;
+//             background-color: lightgray;
+//         }
+//     }
+// }
 
-.App table {
-    display: flex;
-    margin-left: 200px;
-    width: 50vw;
-    height: 50vh;
-}
+// .App table {
+//     display: flex;
+//     margin-left: 200px;
+//     width: 50vw;
+//     height: 50vh;
+// }
 
-.App table tbody {
-    display: flex;
-    flex-direction: column;
-    .dayweek {
-        margin: auto;
-        margin-top: 30px;
-    }
-    .dayweek > div{
-        text-align: center;
-        float: left;
-        border: 0;
-        width: 82px;
-        height: 45px;
-        line-height: 45px;
-        background-color: white;
-    }
-}
+// .App table tbody {
+//     display: flex;
+//     flex-direction: column;
+//     .dayweek {
+//         margin: auto;
+//         margin-top: 30px;
+//     }
+//     .dayweek > div{
+//         text-align: center;
+//         float: left;
+//         border: 0;
+//         width: 82px;
+//         height: 45px;
+//         line-height: 45px;
+//         background-color: white;
+//     }
+// }
 
-.App tr {
-    animation: fadein;
-}
+// .App tr {
+//     animation: fadein;
+// }
 
-.App td {
-    border: 1px solid lightgray;
-    width: 5vw;
-    height: 50px;
-    font-size: 15px;
-}
+// .App td {
+//     border: 1px solid lightgray;
+//     width: 5vw;
+//     height: 50px;
+//     font-size: 15px;
+// }
 
-.App td span {
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+// .App td span {
+//     justify-content: flex-start;
+//     align-items: flex-start;
+// }

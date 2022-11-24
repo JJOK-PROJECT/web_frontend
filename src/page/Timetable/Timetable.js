@@ -53,7 +53,7 @@ export default function Timetable() {
                         <h2>7교시</h2>
                     </div>
                     <div className='classing'>
-                        <Timeapis grade={grades} classing={classed} />
+                        <Timeapis grade={grades} classing={classed} className="classed"/>
                     </div>
                 </div>
             </div>

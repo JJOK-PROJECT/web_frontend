@@ -1,18 +1,13 @@
 import './Schoolschdule.scss';
 import List from '../../components/ListArticle/list.json';
-import SchduleDiv from '../../components/SchduleDiv/SchduleDiv';
-import SchduleData from './schdule.json';
 import React, { useState } from 'react';
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import Datepicker, { registerLocale } from 'react-datepicker';
-import Cal from './Cal';
 import Test from './test'
+import Scheapis from './Api';
 
 
 function Schoolschdule() {
-    const [value, onChange] = useState(new Date());
-    const [mark, setMark] = useState([]);
+    
     const handleDateClick = (arg) => { // bind with an arrow function
         alert(arg.dateStr)
     }
@@ -28,8 +23,9 @@ function Schoolschdule() {
                         </span>
                     </div>
                 </div>
-                <div>
+                <div className='schedule-testing'>
                     <Test/>
+                    <Scheapis/>
                 </div>
             </div>
         </section>
