@@ -4,6 +4,8 @@ import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 function Anonym() {
 
     const [users, setUsers] = useState([]);
@@ -19,6 +21,11 @@ function Anonym() {
             <section className='Anonym-section'>
                 <CommunNav />
                 <div className='Anonym-tit'>
+                        <div className='Anonym-top-write'>
+                            <Link to="/welbato/community/write" >
+                                <span>글쓰기</span>
+                            </Link>
+                        </div>
                     <div className='Anonym-top'>
                         <div className='Anonym-top-tit'>
                             <div className='annaemon'><img src={List.list[3].image} /></div>

@@ -1,9 +1,8 @@
 import './Cmunone.scss';
 import { Link } from 'react-router-dom';
-
-
+import Feed from '../../page/Feed/Feed';
 function Cmunone(props) {
-    
+    <Feed id = {props.id}/>
 
     return (
         <div className='Cmunone-tit-tit'>

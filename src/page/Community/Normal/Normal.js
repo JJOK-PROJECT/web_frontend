@@ -2,9 +2,10 @@ import './Normal.scss';
 import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
-import FeedData from '../feedlist.json';
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 function Normal() {
     const [users, setUsers] = useState([]);
 
@@ -21,6 +22,11 @@ function Normal() {
             <section className='Normal-section'>
                 <CommunNav />
                 <div className='Normal-tit'>
+                        <div className='Normal-top-write'>
+                            <Link to="/welbato/community/write" >
+                                <span>글쓰기</span>
+                            </Link>
+                        </div>
                     <div className='Normal-top'>
                         <div className='Normal-top-tit'>
                             <div className='annaemon'><img src={List.list[2].image} /></div>

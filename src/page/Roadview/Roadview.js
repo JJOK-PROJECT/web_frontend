@@ -8,8 +8,8 @@ export default function Metabus() {
                     <div className='meta-top-tit'>
                         <div className='annaemon'><img src={List.list[0].image} /></div>
                         <span>
-                            <p>오늘의 급식을</p>
-                            <p>확인하세요!</p>
+                            <p>학교의 다양한</p>
+                            <p>시설을 확인해보세요!</p>
                         </span>
                     </div>
                 </div>
