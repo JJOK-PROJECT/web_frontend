@@ -23,7 +23,12 @@ function Normal() {
                 <CommunNav />
                 <div className='Normal-tit'>
                         <div className='Normal-top-write'>
-                            <Link to="/welbato/community/write" >
+                            <Link to={{
+                                pathname: '/welbato/community/write',
+                                state: { // 오.. 새 기술이다
+                                    isPrivate : 1
+                                }
+                            }}>
                                 <span>글쓰기</span>
                             </Link>
                         </div>

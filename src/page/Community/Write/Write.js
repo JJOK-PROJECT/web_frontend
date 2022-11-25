@@ -1,11 +1,7 @@
 import './Write.scss';
 
 export default function Write(props) {
-   
-// const onImgInputBtnClick = (event:any) => {
-//     event.
-// }
-console.log(props);
+   console.log(props)
     return (
         <>
             <section className='Write-section'>

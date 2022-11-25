@@ -17,11 +17,11 @@ function App() {
     const login = async () => {
         try {
             const res = await customAxios.post("/login/signin", request);
-            localStorage.setItem("token", res.data.accessToken)
+            localStorage.setItem("token", res.token)
             window.location.href = "/"
         } catch (error) {
-            alert(error.response.data.status + ": " + error.response.data.message);
-        }
+            alert("계정 정보가 올바르지 않습니다!");
+        }   
     }
 
     const nav = useNavigate();
@@ -62,8 +62,6 @@ function App() {
                 </div>
                 <div className='accounting'>
                     <span onClick={() => Signup()}>회원가입</span>
-                    <br />
-                    <span>비밀번호를 잊어버리셨나요?</span>
                 </div>
             </Modal>
         </React.Fragment>
