@@ -25,7 +25,6 @@ function Schoolschdule() {
                 </div>
                 <div className='schedule-testing'>
                     <Test/>
-                    <Scheapis/>
                 </div>
             </div>
         </section>
