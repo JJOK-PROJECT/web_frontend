@@ -68,14 +68,40 @@
                         display: flex;
                         justify-content: space-between;
 
-                        button {
+                        .btn {
                             background-color: transparent;
                             border: none;
-
-                            img {}
-
                             &:hover {
                                 cursor: pointer;
+                            }
+                            &.active {
+                                background-color: #DFDFDF;
+                                border: 0;
+                                border-radius: 40px;
+                            }
+                        }
+                        .cc {
+                            background-color: transparent;
+                            border: none;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                            &.active {
+                                background-color: #DFDFDF;
+                                border: 0;
+                                border-radius: 40px;
+                            }
+                        }
+                        .dinner {
+                            background-color: transparent;
+                            border: none;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                            &.active {
+                                background-color: #DFDFDF;
+                                border: 0;
+                                border-radius: 40px;
                             }
                         }
                     }
@@ -88,11 +114,13 @@
                 top: 70px;
                 display: flex;
                 justify-content: center;
+
                 .lunch-bottom-menu-musa {
                     align-items: center;
                     width: 45%;
                     display: flex;
                     justify-content: space-between;
+
                     .lunch-bottom-menu-button {
                         button {
                             background-color: white;
@@ -100,10 +128,12 @@
                             border-radius: 130px;
                             width: 65px;
                             height: 65px;
+
                             img {
                                 width: 18px;
                             }
-                            &:hover{
+
+                            &:hover {
                                 cursor: pointer;
                             }
                         }
@@ -116,11 +146,11 @@
                         width: 60%;
                         height: 300px;
                         border-radius: 10px;
-                        p {
-                            
-                            span {
-                                font-size: 18px;
-                            }
+                        .infadein {
+                            font-size: 20px;
+                            text-align: center;
+                            margin: auto;
+                            margin-top: 30px;
                         }
                     }
 
