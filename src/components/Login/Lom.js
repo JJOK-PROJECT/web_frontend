@@ -16,9 +16,10 @@ function App() {
 
     const login = async () => {
         try {
-            const res = await customAxios.post("/login/signin", request);
-            localStorage.setItem("token", res.token)
+            const request = await customAxios.post("/login/signin", request);
+            localStorage.setItem("token", request.token)
             window.location.href = "/"
+            alert("좋아");
         } catch (error) {
             alert("계정 정보가 올바르지 않습니다!");
         }   
