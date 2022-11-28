@@ -13,7 +13,6 @@ export default function Lunch() {
     let todayDate = now.getDate();
     year = year.toString();
     year = year.substr(2, 4);
-    const wow = useRef(null);
     const [today, setToday] = useState(`${todayDate}`);
     const [tomonth, setTomonth] = useState(`${todayMonth}`);
     const [toyear, setToyear] = useState(`${year}`);
@@ -80,7 +79,7 @@ export default function Lunch() {
     let start = 'morning';
     let middle = 'lunch';
     let end = 'dinner';
-    let [backs, setBacks] = useState("");
+    let [backs, setBacks] = useState('morning');
     function morning() {
         setBacks(start);
     }
@@ -95,7 +94,7 @@ export default function Lunch() {
             <div className='Lunch-tit'>
                 <div className='lunch-top'>
                     <div className='lunch-top-tit'>
-                        <div className='annaemon'><img src={List.list[4].image} /></div>
+                        <div className='annaemon'><img src={List.list[4].image}/></div>
                         <span>
                             <p>오늘의 급식을</p>
                             <p>확인하세요!</p>
@@ -110,13 +109,13 @@ export default function Lunch() {
                         <div className='lunch-bottom-bottom'>
                             <div className='lunch-bottom-time'>
                                 <div className='lunch-time'>
-                                    <button onClick={morning} className={"btn" + (backs == start ? " active" : "")}>
+                                    <button onClick={morning} className={"btn" + (backs == 'morning' ? " active" : "")}>
                                         <img src={Breakicon}/>
                                     </button>
-                                    <button onClick={lunch} className={"cc" + (backs == middle ? " active" : "")}>
+                                    <button onClick={lunch} className={"cc" + (backs == 'lunch' ? " active" : "")}>
                                         <img src={Lunchicon}/>
                                     </button>
-                                    <button onClick={dinner} className={"dinner" + (backs == end ? " active" : "")}>
+                                    <button onClick={dinner} className={"dinner" + (backs == 'dinner' ? " active" : "")}>
                                         <img src={Dinnericon}/>
                                     </button>
                                 </div>
@@ -130,7 +129,8 @@ export default function Lunch() {
                                     </button>
                                 </div>
                                 <div className='lunch-bottom-menu-menu'>
-                                    <Mealapis year={toyear} month={tomonth} days={today} judge={backs}/>                          </div>
+                                    <Mealapis year={toyear} month={tomonth} days={today} judge={backs} />                          
+                                </div>
                                 <div className='lunch-bottom-menu-button'>
                                     <button onClick={plusdate}>
                                         <img src='https://ifh.cc/g/2v62hD.png' />
