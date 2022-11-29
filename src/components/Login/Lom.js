@@ -44,7 +44,7 @@ function App() {
         <React.Fragment>
             <button onClick={openModal} className="modalbutton-login">로그인</button>
             <Modal open={modalOpen} close={closeModal}>
-                <div className='l-header'>
+                <div guclassName='l-header'>
                     <img src={logo} width="150" height="26" />
                 </div>
                 <div className='l-title'>

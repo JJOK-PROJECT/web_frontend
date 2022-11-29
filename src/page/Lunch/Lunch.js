@@ -1,12 +1,12 @@
 import './Lunch.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import List from "../../components/ListArticle/list.json";
 import Lunchicon from "../../assets/icon/lunch.svg";
 import Breakicon from "../../assets/icon/breakfast.svg";
 import Dinnericon from "../../assets/icon/dinner.svg";
+import Mealapis from './Api';
 export default function Lunch() {
-    
     let now = new Date();
     let year = now.getFullYear();
     let todayMonth = now.getMonth() + 1;
@@ -52,20 +52,49 @@ export default function Lunch() {
     function minusdate() {
         setToday(todayDate => Number(todayDate) - 1);
         if (today < 2) {
-            setToday(todayDate => Number(todayDate) * 0 + 31);
-            setTomonth(todayMonth => Number(todayMonth) - 1);
             if (tomonth < 2) {
-                setTomonth(todayMonth => Number(todayMonth) * 0 + 12);
+                setTomonth(todayMonth => Number(todayMonth) * 0 + 13);
                 setToyear(toyear => Number(toyear) - 1);
             }
+            if(tomonth == 12 || tomonth == 10 || tomonth == 7 || tomonth == 5){
+                setToday(todayDate => Number(todayDate) * 0 + 30);
+                setTomonth(todayMonth => Number(todayMonth) - 1);
+            }
+            else if(tomonth == 3){
+                if(toyear % 4 == 0){
+                    setToday(todayDate => Number(todayDate) * 0 + 29);
+                    setTomonth(todayMonth => Number(todayMonth) - 1);
+                }
+                else {
+                setToday(todayDate => Number(todayDate) * 0 + 28);
+                setTomonth(todayMonth => Number(todayMonth) - 1);
+                }
+            }
+            else {
+                setToday(todayDate => Number(todayDate) * 0 + 31);
+                setTomonth(todayMonth => Number(todayMonth) - 1);
+            }
         }
+    }
+    let start = 'morning';
+    let middle = 'lunch';
+    let end = 'dinner';
+    let [backs, setBacks] = useState('morning');
+    function morning() {
+        setBacks(start);
+    }
+    function lunch(){
+        setBacks(middle);
+    }
+    function dinner() {
+        setBacks(end);
     }
     return (
         <section className='Lunch-section'>
             <div className='Lunch-tit'>
                 <div className='lunch-top'>
                     <div className='lunch-top-tit'>
-                        <div className='annaemon'><img src={List.list[5].image} /></div>
+                        <div className='annaemon'><img src={List.list[4].image}/></div>
                         <span>
                             <p>오늘의 급식을</p>
                             <p>확인하세요!</p>
@@ -80,14 +109,14 @@ export default function Lunch() {
                         <div className='lunch-bottom-bottom'>
                             <div className='lunch-bottom-time'>
                                 <div className='lunch-time'>
-                                    <button>
-                                        <img src={Breakicon} />
+                                    <button onClick={morning} className={"btn" + (backs == 'morning' ? " active" : "")}>
+                                        <img src={Breakicon}/>
                                     </button>
-                                    <button>
-                                        <img src={Lunchicon} />
+                                    <button onClick={lunch} className={"cc" + (backs == 'lunch' ? " active" : "")}>
+                                        <img src={Lunchicon}/>
                                     </button>
-                                    <button>
-                                        <img src={Dinnericon} />
+                                    <button onClick={dinner} className={"dinner" + (backs == 'dinner' ? " active" : "")}>
+                                        <img src={Dinnericon}/>
                                     </button>
                                 </div>
                             </div>
@@ -100,7 +129,7 @@ export default function Lunch() {
                                     </button>
                                 </div>
                                 <div className='lunch-bottom-menu-menu'>
-                                    
+                                    <Mealapis year={toyear} month={tomonth} days={today} judge={backs} />                          
                                 </div>
                                 <div className='lunch-bottom-menu-button'>
                                     <button onClick={plusdate}>

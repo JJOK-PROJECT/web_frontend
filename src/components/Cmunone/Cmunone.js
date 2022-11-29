@@ -2,11 +2,10 @@ import './Cmunone.scss';
 import { Link } from 'react-router-dom';
 import Feed from '../../page/Feed/Feed';
 function Cmunone(props) {
-    <Feed id = {props.id}/>
 
     return (
         <div className='Cmunone-tit-tit'>
-        <Link to={`/welbato/community/feed/${props.id}`} style={{ textDecoration: "none" }}>
+        <Link to={`/welbato/community/feed/${props.id}`} state={{ id: `${props.id}` }} style={{ textDecoration: "none" }}>
             <div className='Cmunone-list-one'>
                 <div className='Cmunone-list-one-div'>
                     <span className='Cmunone-list-title'>

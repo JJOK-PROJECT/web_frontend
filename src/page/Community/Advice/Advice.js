@@ -12,7 +12,6 @@ import { useHistory } from "react-router-dom";
 export default function Advice() {
     const [users, setUsers] = useState([]);
 
-    
     useEffect(() => {
         axios.get('http://13.125.225.199:8003/all_contect')
             .then(response => {
