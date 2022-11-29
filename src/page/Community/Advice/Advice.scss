@@ -1,18 +1,29 @@
 @import '../../../style/common.scss';
 
 .Advice-section {
-    height: 100vh;
     background-color: $background-blue;
+    height: 100vh;
     white-space: pre-wrap;
 }
 
 .Advice-tit {
+    background-color: $background-blue;
+    position: relative;
+    top: 90px;
+    .Advice-top-write{
+        position: absolute;
+        right: 160px;
+        top: 30px;
+        span{
+            color: black;
+        }
+    }
+    
     .Advice-top {
         position: relative;
-        top: 90px;
-        left: 30px;
+        left: 150px;
         display: inline-block;
-
+        padding-bottom: 20px;
         .Advice-top-tit {
             .annaemon {
                 float: left;
@@ -25,7 +36,7 @@
                 top: 10px;
                 left: 10px;
                 p{
-                    font-weight:lighter;
+                    font-weight:normal;
                     margin: 0 auto;
                 }
             }
@@ -34,8 +45,9 @@
     .Advice-bottom{
         width: 80vw;
         margin: 0 auto;
-        position: relative;
-        top: 120px;
+        
+        .Advice-bottom-cmunone{
+        }
     }
 }
 

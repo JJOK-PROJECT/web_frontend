@@ -1,0 +1,75 @@
+@import '../../../style/common.scss';
+
+.Write-section {
+    background-color: $background-blue;
+    height: 100vh;
+    white-space: pre-wrap;
+}
+
+.Write-tit {
+    background-color: $background-blue;
+    position: relative;
+    top: 90px;
+    .Write-top{
+        display: flex;
+        justify-content: center;
+        input{
+            width: 70vw;
+            font-size: 30px;
+            height: 50px;
+            line-height: 50px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        ::placeholder{
+            font-size: 30px;
+            color: $light-grey;
+            font-weight: 500;
+        }
+        :focus{
+            border: 1px solid $main-blue;
+            outline: 3px solid #c3dcff;
+        }
+    }
+    .Write-middle{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top:20px;
+        textarea{
+            width: 70vw;
+            font-size: 15px;
+            height:430px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        ::placeholder{
+            font-size: 20px;
+            color: $light-grey;
+            font-weight: 500;
+        }
+        :focus{
+            border: 1px solid $main-blue;
+            outline: 3px solid #c3dcff;
+        }
+    }
+    .Write-bottom{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top:40px;
+        button{
+            padding: 10px;
+            background-color: $main-blue;
+            width: 71vw;
+            color: white;
+            font-weight: 500;
+            font-size: 20px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+}

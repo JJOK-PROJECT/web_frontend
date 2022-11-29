@@ -1,21 +1,43 @@
 import FeedData from './feed.json';
 import './Feed.scss';
+import axios from 'axios';
+import Cmunone from '../../components/Cmunone/Cmunone';
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 function Feed() {
+
+    const location = useLocation();
+    const cmunp = location.state;
+
+    const [feeds, setFeeds] = useState([]);
+    console.log(cmunp)
+    useEffect(() => {
+        axios.get(`http://13.125.225.199:8003/get_contact?id=${cmunp.id}`)
+            .then(response => {
+                setFeeds(response.data);
+            });
+    }, []);
+
+    let wow = String(feeds.upload_date)
+
     return (
         <section className='Feed-section'>
             <div className='Feed-div-tit-div'>
                 <div className='Feed-div-tit'>
                     <div className='Feed-top'>
-                        <span className='Feed-top-title'>{FeedData.title}</span>
+                        <span className='Feed-top-title'>{feeds.title}</span>
                         <span className='Feed-top-right'>
-                            <span className='Feed-top-writer'>{FeedData.userName}</span>
-                            <span className='Feed=top-day'>{FeedData.upload_date.substr(0,10)}</span>
+                            <span className='Feed-top-writer'>{feeds.userName}</span>
+                            <span className='Feed=top-day'>{wow.substr(0,10)}</span>
                         </span>
                     </div>
                     <hr className='Feed-section-top' />
                     <div className='Feed-bottom'>
                         <div>
-                            <img src={FeedData.image_path}/>
+                            <span>
+                                {feeds.contactId}
+                                <div><img src={feeds.image_path}/></div>
+                            </span>
                         </div>
                     </div>
                 </div>

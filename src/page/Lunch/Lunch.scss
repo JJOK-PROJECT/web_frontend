@@ -12,7 +12,7 @@
     .lunch-top {
         position: relative;
         top: 90px;
-        left: 30px;
+        left: 150px;
         display: inline-block;
 
         .lunch-top-tit {
@@ -29,7 +29,7 @@
                 left: 10px;
 
                 p {
-                    font-weight: lighter;
+                    font-weight: normal;
                     margin: 0 auto;
                 }
             }
@@ -46,7 +46,7 @@
             .lunch-day {
                 text-align: center;
                 position: relative;
-                top: 10px;
+                top: 0px;
 
                 span {
                     font-style: normal;
@@ -59,7 +59,7 @@
                 display: flex;
                 justify-content: center;
                 position: relative;
-                top: 40px;
+                top: 20px;
 
                 .lunch-bottom-time {
                     width: 20%;
@@ -71,33 +71,41 @@
                         .btn {
                             background-color: transparent;
                             border: none;
+
                             &:hover {
                                 cursor: pointer;
                             }
+
                             &.active {
                                 background-color: #DFDFDF;
                                 border: 0;
                                 border-radius: 40px;
                             }
                         }
+
                         .cc {
                             background-color: transparent;
                             border: none;
+
                             &:hover {
                                 cursor: pointer;
                             }
+
                             &.active {
                                 background-color: #DFDFDF;
                                 border: 0;
                                 border-radius: 40px;
                             }
                         }
+
                         .dinner {
                             background-color: transparent;
                             border: none;
+
                             &:hover {
                                 cursor: pointer;
                             }
+
                             &.active {
                                 background-color: #DFDFDF;
                                 border: 0;
@@ -111,7 +119,7 @@
             .lunch-bottom-menu {
                 width: 100%;
                 position: relative;
-                top: 70px;
+                top: 50px;
                 display: flex;
                 justify-content: center;
 
@@ -146,7 +154,9 @@
                         width: 60%;
                         height: 300px;
                         border-radius: 10px;
-                        .infadein {
+                        .infadein { 
+                            width: 150px;
+                            word-break: keep-all;
                             font-size: 20px;
                             text-align: center;
                             margin: auto;
@@ -158,4 +168,4 @@
             }
         }
     }
-}
+}   

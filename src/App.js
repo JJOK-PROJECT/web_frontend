@@ -11,6 +11,7 @@ import Feed from "./page/Feed/Feed";
 import Roadview from "./page/Roadview/Roadview";
 import Schoolschdule from "./page/Schoolschdule/Schoolschdule";
 import Timetable from "./page/Timetable/Timetable";
+import Write from "./page/Community/Write/Write";
 function App() {
   return (
     <BrowserRouter>
@@ -22,10 +23,11 @@ function App() {
           <Route path='/welbato/community/anonymous' element={<Anonym/>}/>
           <Route path='/welbato/community/hotadvice' element={<Advice/>}/>
           <Route path='/welbato/community' element={<Normal/>}/>
-          <Route path='/welbato/community/feed/1' element={<Feed/>}/>
+          <Route path='/welbato/community/feed/:id' element={<Feed/>}/>
           <Route path='/welbato/roadview' element={<Roadview/>}/>
           <Route path='/welbato/timetable' element={<Timetable/>}/>
           <Route path='/welbato/schoolschdule' element={<Schoolschdule/>}/>
+          <Route path='/welbato/community/write' element={<Write/>}/>
         </Routes>
     </BrowserRouter>
   );

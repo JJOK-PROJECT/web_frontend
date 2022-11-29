@@ -3,8 +3,9 @@ import CommunNav from '../../../components/CommunNav/CommunNav';
 import List from "../../../components/ListArticle/list.json";
 import Cmunone from '../../../components/Cmunone/Cmunone';
 import React, { useState, useEffect } from "react";
-import { customAxios } from '../../../config/axiosConfig';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 function Anonym() {
 
     const [users, setUsers] = useState([]);
@@ -15,17 +16,19 @@ function Anonym() {
                 setUsers(response.data);
             });
     }, []);
-
-
-
     return (
         <>
             <section className='Anonym-section'>
                 <CommunNav />
                 <div className='Anonym-tit'>
+                        <div className='Anonym-top-write'>
+                            <Link to="/welbato/community/write" >
+                                <span>글쓰기</span>
+                            </Link>
+                        </div>
                     <div className='Anonym-top'>
                         <div className='Anonym-top-tit'>
-                            <div className='annaemon'><img src={List.list[2].image} /></div>
+                            <div className='annaemon'><img src={List.list[3].image} /></div>
                             <span>
                                 <p>재학생 및 졸업생들과</p>
                                 <p>익명으로 소통해보세요!</p>
@@ -33,21 +36,28 @@ function Anonym() {
                         </div>
                     </div>
                     <div className='Anonym-bottom'>
-                        <div className='Anonym-bottom-cmunone'>
-                            {users.data && users.data.map(f => (
-                                <Cmunone
-                                    id={f.id}
-                                    uid={f.uid}
-                                    title={f.title}
-                                    contact={f.contact}
-                                    heart={f.heart}
-                                    userName={f.userName}
-                                    upload_date={f.upload_date}
-                                    isNotice={f.isNotice}
-                                    isPrivate={f.isPrivate}
-                                    isHot={f.isHot}
-                                />
-                            ))}
+                        <div className='Anonym-bottom-div'>
+
+                            <div className='Anonym-bottom-cmunone'>
+                                {users.data && users.data.map(f => (
+                                    f.isPrivate === 1 ?
+                                        <Cmunone
+                                            id={f.id}
+                                            uid={f.uid}
+                                            title={f.title}
+                                            contact={f.contact}
+                                            heart={f.heart}
+                                            userName={f.userName}
+                                            upload_date={f.upload_date}
+                                            isNotice={f.isNotice}
+                                            isPrivate={f.isPrivate}
+                                            isHot={f.isHot}
+                                        />
+                                        :
+                                        <>
+                                        </>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

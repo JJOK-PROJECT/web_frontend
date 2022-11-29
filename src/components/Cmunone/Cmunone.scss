@@ -1,7 +1,6 @@
 @import '../../style/common.scss';
 
 .Cmunone-article{
-    padding-bottom: 20px;
 }
 .Cmunone-tit-tit{
     padding-bottom: 20px;
@@ -36,3 +35,14 @@
         background-color: $hover-color;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    .Cmunone-list-writer{
+        display: none;
+    }
+    .Cmunone-list-day{
+        display: none;
+    }
+}
+  

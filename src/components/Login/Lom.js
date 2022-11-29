@@ -16,12 +16,13 @@ function App() {
 
     const login = async () => {
         try {
-            const res = await customAxios.post("/login/signin", request);
-            localStorage.setItem("token", res.data.accessToken)
+            const request = await customAxios.post("/login/signin", request);
+            localStorage.setItem("token", request.token)
             window.location.href = "/"
+            alert("좋아");
         } catch (error) {
-            alert(error.response.data.status + ": " + error.response.data.message);
-        }
+            alert("계정 정보가 올바르지 않습니다!");
+        }   
     }
 
     const nav = useNavigate();
@@ -43,7 +44,7 @@ function App() {
         <React.Fragment>
             <button onClick={openModal} className="modalbutton-login">로그인</button>
             <Modal open={modalOpen} close={closeModal}>
-                <div className='l-header'>
+                <div guclassName='l-header'>
                     <img src={logo} width="150" height="26" />
                 </div>
                 <div className='l-title'>
@@ -62,8 +63,6 @@ function App() {
                 </div>
                 <div className='accounting'>
                     <span onClick={() => Signup()}>회원가입</span>
-                    <br />
-                    <span>비밀번호를 잊어버리셨나요?</span>
                 </div>
             </Modal>
         </React.Fragment>
