@@ -18,6 +18,8 @@ function Feed() {
             });
     }, []);
 
+    let wow = String(feeds.upload_date)
+
     return (
         <section className='Feed-section'>
             <div className='Feed-div-tit-div'>
@@ -26,7 +28,7 @@ function Feed() {
                         <span className='Feed-top-title'>{feeds.title}</span>
                         <span className='Feed-top-right'>
                             <span className='Feed-top-writer'>{feeds.userName}</span>
-                            <span className='Feed=top-day'>{feeds.upload_date}</span>
+                            <span className='Feed=top-day'>{wow.substr(0,10)}</span>
                         </span>
                     </div>
                     <hr className='Feed-section-top' />
