@@ -33,6 +33,8 @@ function Feed() {
                     <div className='Feed-bottom'>
                         <div>
                             <span>
+                                {feeds.contactId}
+                                <div><img src={feeds.image_path}/></div>
                             </span>
                         </div>
                     </div>
