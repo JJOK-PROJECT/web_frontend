@@ -36,12 +36,16 @@
     .schedule-testing{
         margin: auto;
         margin-top: 40px;
-        width: 1000px;
+        width: 67%;
         .sf {
-            height: 70%;
+            height: 100%;
         }
         #sio {
             height: 40px;
         }
     }
+}
+
+.fc-view-harness.fc-view-harness-active{
+    height: 500px !important;
 }
