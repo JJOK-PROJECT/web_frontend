@@ -35,7 +35,7 @@ function Feed() {
                     <div className='Feed-bottom'>
                         <div>
                             <span>
-                                {feeds.contactId}
+                                <span className='contact-id'>{feeds.contactId}</span>
                                 <div><img src={feeds.image_path}/></div>
                             </span>
                         </div>
